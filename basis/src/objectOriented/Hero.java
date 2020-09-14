@@ -10,20 +10,31 @@ import interfaceAndExtends.Item;
  */
 public class Hero {
 	/* 姓名 */
-	String name;
+	public String name;
 	/* 血量 */
-	float hp;
+	public float hp;
 	/* 护甲 */
-	float armor;
+	public float armor;
 	/* 移动速度 */
-	int moveSpeed;
+	public int moveSpeed;
 
 	public Hero() {
 		System.out.println("Hero的构造方法");
 	}
+
 	public Hero(String name) {
 		System.out.println("Hero的有参构造方法。");
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Hero{" +
+				"name='" + name + '}';
+	}
+
+	public boolean isDead() {
+		return false;
 	}
 
 	public void useItem(Item i) {
@@ -45,6 +56,7 @@ public class Hero {
 		int die;
 		/* 帮助数量 */
 		int assit;
+
 		public void legendary() {
 			if (kill >= 8) {
 				System.out.println("超神");
@@ -57,6 +69,7 @@ public class Hero {
 	// 敌方的水晶
 	static class EnemyCrystal {
 		int hp = 5000;
+
 		// 如果水晶血量为0，则宣布胜利
 		public void checkIfWin() {
 			if (hp == 0) {

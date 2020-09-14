@@ -1,7 +1,5 @@
 package exceptHandle;
 
-import objectOriented.Hero;
-
 import java.io.File;
 import java.io.FileInputStream;
 
