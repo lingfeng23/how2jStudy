@@ -1,3 +1,5 @@
+package log4j;
+
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -24,7 +26,7 @@ public class TestLog4j {
 		logger.fatal("致命信息");
 
 		// properties 配置文件
-		PropertyConfigurator.configure("./log4j.properties");
+		PropertyConfigurator.configure("log4j/log4j.properties");
 		for (int i = 0; i < 2000; i++) {
 			logger.trace("跟踪信息");
 			logger.debug("调试信息");
@@ -35,7 +37,7 @@ public class TestLog4j {
 		}
 
 		// xml 配置文件
-		PropertyConfigurator.configure("./log4j.xml");
+		PropertyConfigurator.configure("log4j/log4j.xml");
 		for (int i = 0; i < 1000; i++) {
 			logger.trace("跟踪信息");
 			logger.debug("调试信息");
