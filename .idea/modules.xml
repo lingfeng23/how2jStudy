@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/how2jStudy.iml" filepath="$PROJECT_DIR$/.idea/how2jStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle.iml" filepath="$PROJECT_DIR$/middle/middle.iml" />
       <module fileurl="file://$PROJECT_DIR$/middleware/middleware.iml" filepath="$PROJECT_DIR$/middleware/middleware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro_messBook/pro_messBook.iml" filepath="$PROJECT_DIR$/pro_messBook/pro_messBook.iml" />
     </modules>
   </component>
 </project>
