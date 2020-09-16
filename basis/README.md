@@ -1,18 +1,18 @@
 * DONE
 ###《Java 基础》
-####HelloWorld
+####HelloWorld  DONE
 略
-####面向对象（objectOriented）
-####变量
+####面向对象（objectOriented）    DONE
+####变量  DONE
 略
-####操作符
+####操作符 DONE
 略
-####控制流程（controlFlow）
+####控制流程（controlFlow）   DONE
 - 黄金分割点
 - 水仙花数
-####数组
+####数组  DONE
 略
-####类和对象（classAndObject）
+####类和对象（classAndObject）    DONE
 - 饿汉式是立即加载的方式，无论是否会用到这个对象，都会加载。
     * 如果在构造方法里写了性能消耗较大，占时较久的代码，比如建立与数据库的连接，那么就会在启动的时候感觉稍微有些卡顿。
 
@@ -20,7 +20,7 @@
     * 使用懒汉式，在启动的时候，会感觉到比饿汉式略快，因为并没有做对象的实例化。 但是在第一次调用的时候，会进行实例化操作，感觉上就略慢。
 
 - 看业务需求，如果业务上允许有比较充分的启动和初始化时间，就使用饿汉式，否则就使用懒汉式。
-####接口继承（interfaceAndExtends）
+####接口继承（interfaceAndExtends）   DONE
 抽象类和接口的区别：
 - 区别1：
     * 子类只能继承一个抽象类，不能继承多个
@@ -35,9 +35,9 @@
         * 静态
         * final的
     （即便没有显式的声明）
-####数字与字符串
+####数字与字符串  DONE
 略
-####日期（date）
-####JAVA书籍
+####日期（date）    DONE
+####JAVA书籍  DONE
     - 《Core Java》：作为字典
     - 《Effective Java》：作为零食，提升代码质量
