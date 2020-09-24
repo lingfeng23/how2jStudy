@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	<script src="./jquery.min.js"></script>
+	<script src="./jquery.qrcode.min.js"></script>
+	<title>Title</title>
+</head>
+<body>
+<div style="width:800px;margin:50px auto;text-align:center">
+	<h1>把字符串: http://12306.com 转换为二维码</h1>
+	<div id="qrcode"></div>
+
+</div>
+
+<script>
+	$(function () {
+		$('#qrcode').qrcode({render: 'canvas', text: "http://12306.com", width: 260, height: 260});
+	});
+
+</script>
+</body>
+</html>
