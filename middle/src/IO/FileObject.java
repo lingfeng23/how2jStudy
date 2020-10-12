@@ -30,6 +30,5 @@ public class FileObject {
 		System.out.println(file.getParentFile());
 		System.out.println(file.length());
 		System.out.println(new Date(file.lastModified()));
-
 	}
 }
