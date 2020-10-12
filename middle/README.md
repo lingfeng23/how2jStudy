@@ -6,3 +6,5 @@
     * throws 表示出现异常的一种可能性，并不一定会发·生这些异常；throw则是抛出了异常，执行throw则一定抛出了某个异常对象。
 
 ### I/O(IO) DONE
+
+### 集合框架(collections) DONE
