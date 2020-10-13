@@ -6,7 +6,7 @@ package collections;
  * @project how2jStudy
  * @since 2020/10/13
  */
-public class Hero {
+public class Hero implements Comparable<Hero> {
 	public String name;
 	public float blood;
 	public int damage;
@@ -25,6 +25,15 @@ public class Hero {
 	}
 
 	public String toString() {
-		return name;
+		return name + "血量：" + blood + ",伤害：" + damage;
+	}
+
+	@Override
+	public int compareTo(Hero o) {
+		if (damage < o.damage) {
+			return 1;
+		} else {
+			return -1;
+		}
 	}
 }
