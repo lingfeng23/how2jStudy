@@ -1,15 +1,15 @@
 # how2jStudy
 
-## Java基础（basis）    DONE
+## Java基础(basis) DONE
 
-## Java中级（middle）
+## Java中级(middle) DONE
 
-## Java高级（advanced） DONE
+## Java高级(advanced) DONE
 
-## Java应用（apply）
+## Java应用(apply)
 
-## 工具和中间件（middleware）
+## 工具和中间件(middleware)
 
-## 实践项目（pro_）
+## 实践项目(pro_)
 
-### 一本糊涂账（pro_messBook)
+### 一本糊涂账(pro_messBook)
