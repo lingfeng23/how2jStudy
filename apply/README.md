@@ -6,7 +6,7 @@
 #### junit(junit) DONE
 略
 
-#### hutool(hutool)
+#### hutool(hutool) DONE
 - 日期与字符串转换
 - 文件操作
 - 转码与反转码
@@ -22,7 +22,7 @@
 - FTP 上传与下载
 - 图形验证码生成
 
-#### jsoup
+#### jsoup DONE
 
 #### lombok DONE
 略

@@ -6,7 +6,7 @@
 
 ## Java高级(advanced) DONE
 
-## Java应用(apply)
+## Java应用(apply) DONE
 
 ## 工具和中间件(middleware)
 
