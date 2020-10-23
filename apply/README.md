@@ -1,9 +1,9 @@
 ###《Java 应用》
 
-#### Log4j(log4j)    DONE
+#### Log4j(log4j) DONE
 略
 
-#### junit(junit)    DONE
+#### junit(junit) DONE
 略
 
 #### hutool(hutool)
@@ -24,5 +24,5 @@
 
 #### jsoup
 
-####lombok  DONE
+#### lombok DONE
 略
