@@ -1,0 +1,90 @@
+<!-- javaScript对象 -->
+<script>
+    /**
+     * 数字 
+     */
+    var x = new Number(123);
+    document.write('数字对象x的值:' + x);
+    document.write("<br>");
+    document.write('数字对象x的类型:' + typeof x); //通过typeof 获知这是一个object
+    document.write("<br>");
+    var y = 123;
+    document.write('基本类型y的值:' + y);
+    document.write("<br>");
+    document.write('基本类型y的类型:' + typeof y); //通过typeof 获知这是一个number 
+    document.write("<br>");
+    document.write('Number对象的最小值:' + Number.MIN_VALUE);
+    document.write("<br>");
+    document.write('Number对象的最大值:' + Number.MAX_VALUE);
+    document.write("<br>");
+
+    /**
+     * 字符串 
+     */
+    var y = new String("Hello JavaScript");
+    document.write("通过.length属性获取字符串'Hello JavaScript'的长度" + y.length);
+    document.write("<br>");
+    y = new String("Hello JavaScrpt");
+    document.write("字符串y的值:" + y);
+    document.write("<br>");
+    document.write('通过 charAt(0)获取位置0的字符串： ' + y.charAt(0)); //返回H
+    document.write("<br>");
+    document.write('通过 charCodeAt(0)获取位置0的字符的 Unicode码 ：' + y.charCodeAt(0)); //返回H对应的Unicode码 72
+    document.write("<br>");
+
+    /**
+     * 数组
+     */
+    function p(s, v) {
+        document.write(s + ' ' + v);
+        document.write("<br>");
+    }
+
+    var x = new Array(); //创建长度是0的数组
+    p('通过 new Array()创建一个空数组:', x);
+    x = new Array(5); //创建长度是5的数组,，但是其每一个元素都是undefine
+    p('通过 new Array(5)创建一个长度是5的数组:', x);
+    p('像new Array(5) 这样没有赋初值的方式创建的数组，每个元素的值都是:', x[0]);
+    x = new Array(3, 1, 4, 1, 5, 9, 2, 6); //根据参数创建数组
+    p('创建有初值的数组new Array(3,1,4,1,5,9,2,6) :', x);
+    document.write("<br>");
+
+    /**
+     * 日期
+     */
+    var d = new Date();
+    document.write('new Date():' + d);
+    document.write("<br>");
+    document.write('分别获取年月日: ');
+    document.write(d.getFullYear());
+    document.write("/");
+    document.write(d.getMonth() + 1);
+    document.write("/");
+    document.write(d.getDate());
+    document.write("<br>");
+
+
+    /**
+     * Math
+     */
+    document.write(Math.E);
+    document.write("<br>");
+    document.write(Math.PI);
+    document.write("<br>");
+    document.write(Math.abs(-1));
+    document.write("<br>");
+    document.write(Math.pow(3, 3)); //3的立方，即27
+    document.write("<br>");
+
+    /**
+     * 自定义对象
+     */
+    var hero = new Object();
+    hero.name = "盖伦"; //定义一个属性name，并且赋值
+    hero.kill = function () {
+        document.write(hero.name + " 正在杀敌"); //定义一个函数kill
+    }
+
+    hero.kill(); //调用函数kill
+
+</script>

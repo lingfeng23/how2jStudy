@@ -1,10 +1,8 @@
 ###《Java 应用》
 
-#### Log4j(log4j) DONE
-略
+#### Log4j(log4j) 略
 
-#### junit(junit) DONE
-略
+#### junit(junit) 略
 
 #### hutool(hutool) DONE
 - 日期与字符串转换
@@ -24,5 +22,4 @@
 
 #### jsoup DONE
 
-#### lombok DONE
-略
+#### lombok 略

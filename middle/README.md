@@ -9,7 +9,7 @@
 
 ### 集合框架(collections) DONE
 
-### 泛型 DONE
+### 泛型 略
 
 ### Lambda(lambda) DONE
 
