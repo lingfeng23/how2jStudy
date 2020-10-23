@@ -7,7 +7,6 @@ import cn.hutool.core.util.EscapeUtil;
 import cn.hutool.core.util.HashUtil;
 import cn.hutool.core.util.HexUtil;
 import cn.hutool.core.util.URLUtil;
-import com.sun.javafx.image.impl.IntArgb;
 import org.junit.Test;
 
 import java.awt.*;
