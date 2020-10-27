@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/basis/basis.iml" filepath="$PROJECT_DIR$/basis/basis.iml" />
       <module fileurl="file://$PROJECT_DIR$/database/database.iml" filepath="$PROJECT_DIR$/database/database.iml" />
       <module fileurl="file://$PROJECT_DIR$/frame_hibernate/frame_hibernate.iml" filepath="$PROJECT_DIR$/frame_hibernate/frame_hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frame_spring/frame_spring.iml" filepath="$PROJECT_DIR$/frame_spring/frame_spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/front/front.iml" filepath="$PROJECT_DIR$/front/front.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/how2jStudy.iml" filepath="$PROJECT_DIR$/.idea/how2jStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle.iml" filepath="$PROJECT_DIR$/middle/middle.iml" />
