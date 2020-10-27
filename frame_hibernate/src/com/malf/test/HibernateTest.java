@@ -11,6 +11,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Restrictions;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -28,20 +29,90 @@ public class HibernateTest {
 		session.beginTransaction();
 		String name = "phone";
 
+		// 查询总数
+		Query query = session.createQuery("select count(*) from Product p where p.name like ?");
+		query.setString(0, "%" + name + "%");
+		long total = (Long) query.uniqueResult();
+		System.out.println(total);
+
+		// Hibernate使用Iterator实现N 1顶折
+//		Query query = session.createQuery("from Product p where p.name like ?");
+//		query.setString(0, "%" + name + "%");
+//		Iterator<Product> it = query.iterate();
+//		while (it.hasNext()) {
+//			Product pro = it.next();
+//			System.out.println(pro.getName());
+//		}
+
+		// Hibernate 分页
+//		Criteria criteria = session.createCriteria(Product.class);
+//		criteria.add(Restrictions.like("name", "%" + name + "%"));
+//		criteria.setFirstResult(2);
+//		criteria.setMaxResults(5);
+//		List<Product> products = criteria.list();
+//		for (Product pro : products) {
+//			System.out.println(pro.getName());
+//		}
+
+		// 二级缓存
+//		Category category1 = (Category) session.get(Category.class, 2);
+//		Category category2 = (Category) session.get(Category.class, 2);
+
+		// 一级缓存
+//		System.out.println("AAA");
+//		Category category1 = (Category)session.get(Category.class, 2);
+//		System.out.println("BBB");
+//		Category category2= (Category)session.get(Category.class, 2);
+//		System.out.println("CCC");
+
+		// save-update 级联
+//		Category category = (Category) session.get(Category.class, 2);
+//		Product product1 = new Product();
+//		product1.setName("product1");
+//		Product product2 = new Product();
+//		product2.setName("product2");
+//		Product product3 = new Product();
+//		product3.setName("product3");
+//		category.getProducts().add(product1);
+//		category.getProducts().add(product2);
+//		category.getProducts().add(product3);
+
+		// delete 级联
+//		Category category = (Category) session.get(Category.class, 1);
+//		session.delete(category);
+
+		// 关系的延迟加载
+//		Category category = (Category) session.get(Category.class, 1);
+//		System.out.println("AAA");
+//		System.out.println(category.getProducts());
+//		System.out.println("BBB");
+
+		// 属性的延迟加载
+//		Product product = (Product) session.load(Product.class, 1);
+//		System.out.println("AAA");
+//		System.out.println(product.getName()); // 访问属性“getName()"的时候，才会访问数据库
+//		System.out.println("BBB");
+
+		// Hibernate 事务 -> product1操作可以成功，product2操作失败，则都失败
+//		Product product1 = (Product) session.get(Product.class, 1);
+//		session.delete(product1);
+//		Product product2 = (Product) session.get(Product.class, 2);
+//		product2.setName("长度超过30的字符串作为产品名称长度超过30的字符串作为产品名称长度超过30的字符串作为产品名称长度超过30的字符串作为产品名称");
+//		session.update(product2);
+
 		// Hibernate 多对多
 		// 增加3个用户
-		Set<User> users = new HashSet();
-		for (int i = 0; i < 3; i++) {
-			User user = new User();
-			user.setName("user" + i);
-			users.add(user);
-			session.save(user);
-		}
-
+//		Set<User> users = new HashSet();
+//		for (int i = 0; i < 3; i++) {
+//			User user = new User();
+//			user.setName("user" + i);
+//			users.add(user);
+//			session.save(user);
+//		}
 		// 产品1被用户1,2,3购买
-		Product product = (Product) session.get(Product.class, 1);
-		product.setUsers(users);
-		session.save(product);
+//		Product product = (Product) session.get(Product.class, 1);
+//		product.setUsers(users);
+//		session.save(product);
 
 		// Hibernate 一对多
 //		Category category = (Category) session.get(Category.class, 1);
@@ -118,6 +189,13 @@ public class HibernateTest {
 
 		session.getTransaction().commit();
 		session.close();
+
+//		Session session2 = factory.openSession();
+//		session2.beginTransaction();
+//		Category category3 = (Category) session2.get(Category.class, 2);
+//		session2.getTransaction().commit();
+//		session2.close();
+
 		factory.close();
 	}
 }
