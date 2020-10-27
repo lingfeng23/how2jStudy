@@ -12,7 +12,9 @@
 
 ## J2EE(j2EE)
 
-## Java框架(framework)
+## Java框架(frame_)
+
+### Hibernate(frame_hibernate)
 
 ## 工具和中间件(middleware)
 
