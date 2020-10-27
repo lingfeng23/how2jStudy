@@ -1,6 +1,8 @@
 package com.malf.test;
 
+import com.malf.pojo.Category;
 import com.malf.pojo.Product;
+import com.malf.pojo.User;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -8,7 +10,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Restrictions;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -23,6 +27,36 @@ public class HibernateTest {
 		Session session = factory.openSession();
 		session.beginTransaction();
 		String name = "phone";
+
+		// Hibernate 多对多
+		// 增加3个用户
+		Set<User> users = new HashSet();
+		for (int i = 0; i < 3; i++) {
+			User user = new User();
+			user.setName("user" + i);
+			users.add(user);
+			session.save(user);
+		}
+
+		// 产品1被用户1,2,3购买
+		Product product = (Product) session.get(Product.class, 1);
+		product.setUsers(users);
+		session.save(product);
+
+		// Hibernate 一对多
+//		Category category = (Category) session.get(Category.class, 1);
+//		Set<Product> products = category.getProducts();
+//		for (Product pro : products) {
+//			System.out.println(pro.getName());
+//		}
+
+		// Hibernate 多对一
+//		Category category = new Category();
+//		category.setName("书籍");
+//		session.save(category);
+//		Product product = (Product) session.get(Product.class, 8);
+//		product.setCategory(category);
+//		session.update(product);
 
 		// 使用标准sql查询
 //		String sql = "select * from product where name like '%" + name + "%'";

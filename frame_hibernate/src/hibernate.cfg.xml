@@ -17,6 +17,8 @@
 		<property name="show_sql">true</property>
 		<property name="hbm2ddl.auto">update</property>
 		<mapping resource="com/malf/pojo/Product.hbm.xml"/>
+		<mapping resource="com/malf/pojo/Category.hbm.xml"/>
+		<mapping resource="com/malf/pojo/User.hbm.xml"/>
 	</session-factory>
 
 </hibernate-configuration>
