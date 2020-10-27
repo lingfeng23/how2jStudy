@@ -1,5 +1,6 @@
 package com.malf.pojo;
 
+import javax.persistence.*;
 import java.util.Set;
 
 /**
@@ -8,11 +9,15 @@ import java.util.Set;
  * @project how2jStudy
  * @since 2020/10/27
  */
+@Entity
+@Table(name="user")
 public class User {
 	int id;
 	String name;
 	Set<Product> products;
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public int getId() {
 		return id;
 	}
@@ -29,6 +34,12 @@ public class User {
 		this.name = name;
 	}
 
+	@ManyToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+	@JoinTable(
+			name="user_product",
+			joinColumns=@JoinColumn(name="uid"),
+			inverseJoinColumns=@JoinColumn(name="pid")
+	)
 	public Set<Product> getProducts() {
 		return products;
 	}

@@ -14,7 +14,7 @@
 
 ## Java框架(frame_)
 
-### Hibernate(frame_hibernate)
+### Hibernate(frame_hibernate) DONE
 
 ## 工具和中间件(middleware)
 

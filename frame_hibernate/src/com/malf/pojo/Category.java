@@ -1,5 +1,6 @@
 package com.malf.pojo;
 
+import javax.persistence.*;
 import java.util.List;
 import java.util.Set;
 
@@ -9,11 +10,15 @@ import java.util.Set;
  * @project how2jStudy
  * @since 2020/10/27
  */
+@Entity
+@Table(name="category")
 public class Category {
 	private int id;
 	private String name;
 	private Set<Product> products;
 
+	@OneToMany(fetch=FetchType.EAGER)
+	@JoinColumn(name="cid")
 	public Set<Product> getProducts() {
 		return products;
 	}
@@ -22,6 +27,8 @@ public class Category {
 		this.products = products;
 	}
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public int getId() {
 		return id;
 	}

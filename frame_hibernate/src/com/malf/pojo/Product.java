@@ -1,5 +1,6 @@
 package com.malf.pojo;
 
+import javax.persistence.*;
 import java.util.Set;
 
 /**
@@ -8,6 +9,8 @@ import java.util.Set;
  * @project how2jStudy
  * @since 2020/10/23
  */
+@Entity
+@Table(name = "product")
 public class Product {
 	int id;
 	String name;
@@ -16,6 +19,7 @@ public class Product {
 	Category category;
 	Set<User> users;
 
+	@Column(name = "ver")
 	public int getVersion() {
 		return version;
 	}
@@ -24,6 +28,12 @@ public class Product {
 		this.version = version;
 	}
 
+	@ManyToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+	@JoinTable(
+			name="user_product",
+			joinColumns=@JoinColumn(name="pid"),
+			inverseJoinColumns=@JoinColumn(name="uid")
+	)
 	public Set<User> getUsers() {
 		return users;
 	}
@@ -32,6 +42,8 @@ public class Product {
 		this.users = users;
 	}
 
+	@ManyToOne
+	@JoinColumn(name="cid")
 	public Category getCategory() {
 		return category;
 	}
@@ -40,6 +52,9 @@ public class Product {
 		this.category = category;
 	}
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	public int getId() {
 		return id;
 	}
@@ -48,6 +63,7 @@ public class Product {
 		this.id = id;
 	}
 
+	@Column(name = "name")
 	public String getName() {
 		return name;
 	}
@@ -56,6 +72,7 @@ public class Product {
 		this.name = name;
 	}
 
+	@Column(name = "price")
 	public float getPrice() {
 		return price;
 	}

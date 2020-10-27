@@ -35,9 +35,12 @@
 		<property name="hibernate.cache.use_second_level_cache">true</property>
 		<property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
 
-		<mapping resource="com/malf/pojo/Product.hbm.xml"/>
-		<mapping resource="com/malf/pojo/Category.hbm.xml"/>
-		<mapping resource="com/malf/pojo/User.hbm.xml"/>
+		<!--<mapping resource="com/malf/pojo/Product.hbm.xml"/>-->
+		<!--<mapping resource="com/malf/pojo/Category.hbm.xml"/>-->
+		<!--<mapping resource="com/malf/pojo/User.hbm.xml"/>-->
+		<mapping class="com.malf.pojo.Product"/>
+		<mapping class="com.malf.pojo.Category"/>
+		<mapping class="com.malf.pojo.User"/>
 	</session-factory>
 
 </hibernate-configuration>

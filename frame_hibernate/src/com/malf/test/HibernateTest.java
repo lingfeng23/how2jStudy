@@ -29,11 +29,15 @@ public class HibernateTest {
 		session.beginTransaction();
 		String name = "phone";
 
-		// 查询总数
-		Query query = session.createQuery("select count(*) from Product p where p.name like ?");
-		query.setString(0, "%" + name + "%");
+		// 注解测试
+		Query query = session.createQuery("select count(*) from  Product");
 		long total = (Long) query.uniqueResult();
 		System.out.println(total);
+		// 查询总数
+//		Query query = session.createQuery("select count(*) from Product p where p.name like ?");
+//		query.setString(0, "%" + name + "%");
+//		long total = (Long) query.uniqueResult();
+//		System.out.println(total);
 
 		// Hibernate使用Iterator实现N 1顶折
 //		Query query = session.createQuery("from Product p where p.name like ?");
