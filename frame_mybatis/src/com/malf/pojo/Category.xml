@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.malf.pojo">
+	<resultMap id="categoryBean" type="Category">
+		<id column="cid" property="id"/>
+		<result column="cname" property="name"/>
+		<!--一对多关系-->
+		<collection property="products" ofType="Product">
+			<id column="pid" property="id"/>
+			<result column="name" property="name"/>
+			<result column="price" property="price"/>
+		</collection>
+	</resultMap>
+
+	<select id="listCategoryProduct" resultMap="categoryBean">
+		SELECT c.*, p.*
+		FROM category c
+		LEFT JOIN product p ON c.id = p.cid
+	</select>
+	<insert id="addCategory" parameterType="Category" >
+		INSERT INTO category
+		(name) VALUES (#{name})
+    </insert>
+
+	<delete id="deleteCategory" parameterType="Category" >
+        DELETE FROM category
+        WHERE id= #{id}
+    </delete>
+
+	<select id="getCategory" parameterType="_int" resultType="Category">
+        SELECT *
+        FROM category
+        WHERE id= #{id}
+    </select>
+
+	<update id="updateCategory" parameterType="Category" >
+        UPDATE category
+        SET name=#{name}
+        WHERE id=#{id}
+    </update>
+
+	<select id="listCategory" resultType="Category">
+		SELECT *
+		FROM category
+	</select>
+
+	<select id="listCategoryByName"  parameterType="string" resultType="Category">
+		SELECT *
+		FROM category
+		WHERE name LIKE concat('%',#{0},'%')
+	</select>
+</mapper>

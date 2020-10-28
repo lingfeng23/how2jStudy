@@ -20,6 +20,19 @@
 
 ### Spring(frame_spring) DONE 
 
+### Struts+Hibernate 略
+
+### Spring+Hibernate TODO
+
+### SSH TODO
+
+###
+
+###
+
+### Mybatis(frame_mybatis) DOING
+
+
 ## 工具和中间件(middleware)
 
 ## 分布式和集群
