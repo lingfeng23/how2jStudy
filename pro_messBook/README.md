@@ -73,4 +73,12 @@ ChartUtil
 
 ### 原型-界面类
 
+#### MainPanel
+MainPanel
+
+#### SpendPanel
+SpendPanel
+
+#### RecordPanel
+
 

@@ -11,7 +11,7 @@ import java.io.File;
  * @since 2020/9/17
  */
 public class GUIUtil {
-	private static String imageFolder = "../pro_messBook/img";
+	private static String imageFolder = "./pro_messBook/img";
 
 	/**
 	 * 给按钮设置图标和文本以及提示文字
