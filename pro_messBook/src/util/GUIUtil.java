@@ -13,6 +13,12 @@ import java.io.File;
 public class GUIUtil {
 	private static String imageFolder = "../pro_messBook/img";
 
+	/**
+	 * 给按钮设置图标和文本以及提示文字
+	 * @param button
+	 * @param fileName
+	 * @param tip
+	 */
 	public static void setImageIcon(JButton button, String fileName, String tip) {
 		ImageIcon icon = new ImageIcon(new File(imageFolder, fileName).getAbsolutePath());
 		button.setIcon(icon);
@@ -23,6 +29,11 @@ public class GUIUtil {
 		button.setText(tip);
 	}
 
+	/**
+	 * 给多个组件设置前景色
+	 * @param color
+	 * @param components
+	 */
 	public static void setColor(Color color, JComponent... components) {
 		for (JComponent component: components) {
 			component.setForeground(color);
@@ -30,7 +41,7 @@ public class GUIUtil {
 	}
 
 	/**
-	 *
+	 * 快速显示一个面板的内容
 	 * @param panel
 	 * @param stretchRate 拉伸比例为1表示满屏幕
 	 */
@@ -50,6 +61,12 @@ public class GUIUtil {
 		showPanel(panel, 0.85);
 	}
 
+	/**
+	 * 校验一个组件内容是否是数字格式
+	 * @param textField
+	 * @param input
+	 * @return
+	 */
 	public static boolean checkNumber(JTextField textField, String input) {
 		if (!checkEmpty(textField, input)) {
 			return false;
@@ -65,6 +82,12 @@ public class GUIUtil {
 		}
 	}
 
+	/**
+	 * 校验一个输入框内容是否是空
+	 * @param textField
+	 * @param input
+	 * @return
+	 */
 	public static boolean checkEmpty(JTextField textField, String input) {
 		String text = textField.getText().trim();
 		if (0 == text.length()) {
@@ -75,6 +98,12 @@ public class GUIUtil {
 		return true;
 	}
 
+	/**
+	 * 校验一个组件的内容是否是零
+	 * @param textField
+	 * @param input
+	 * @return
+	 */
 	public static boolean checkZero(JTextField textField, String input) {
 		if (!checkNumber(textField, input)) {
 			return false;
@@ -92,6 +121,9 @@ public class GUIUtil {
 		return Integer.parseInt(textField.getText());
 	}
 
+	/**
+	 * 使用水晶皮肤
+	 */
 	public static void useLNF() {
 		try {
 			UIManager.setLookAndFeel("com.birosoft.liquid.LiquidLookAndFeel");

@@ -1,4 +1,4 @@
-### 《一本糊涂账》
+## 《一本糊涂账》
 
 本项目是基于Swing和JDBC开发的图形界面桌面应用，涵盖了J2SE的绝大部分基础知识。
 
@@ -18,7 +18,7 @@
 - 业务常见处理手法：
     - CRUD操作，配置信息，配置信息初始化，报表生成，一对多关系，多对一关系
 
-#### 表结构设计
+### 表结构设计
 
 创建数据库
 ```
@@ -34,7 +34,7 @@ create database messBook;
     
 表结构及关系参考 messbook.sql
 
-#### 原型-基础
+### 原型-基础
 - 首先是Frame
     * 整个程序只有一个主Frame，所以把这个类规划到包 frame下
 
@@ -46,3 +46,31 @@ create database messBook;
 
 - 最后是Model
     * Model用于存放数据，在这个项目中会用到TableModel和ComboBoxModel，放在 model包下
+
+#### 单例的面板类
+各种按钮监听器的主要作用是获取组件的值，和修改组件的值。
+
+如何使得监听器可以方便得获取组件？
+    - 1. 在面板类中，把组件声明为public的属性
+    - 2. 把面板类设计为单例模式
+
+#### 居中面板
+CenterPanel
+
+#### GUIUtil
+GUIUtil
+
+#### ColorUtil
+ColorUtil
+
+#### CircleProgressBar
+CircleProgressBar
+
+#### ChartUtil
+ChartUtil
+
+#### 图片资源
+
+### 原型-界面类
+
+
