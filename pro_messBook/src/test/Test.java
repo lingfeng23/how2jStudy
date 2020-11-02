@@ -1,3 +1,5 @@
+package test;
+
 import com.birosoft.liquid.util.Panel;
 import util.GUIUtil;
 

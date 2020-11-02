@@ -4,7 +4,7 @@ import javax.swing.*;
 
 /**
  * @author malf
- * @description 消费面板
+ * @description 消费一览面板类
  * @project how2jStudy
  * @since 2020/9/17
  */
