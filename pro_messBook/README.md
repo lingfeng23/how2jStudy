@@ -80,5 +80,24 @@ MainPanel
 SpendPanel
 
 #### RecordPanel
+RecordPanel
+
+#### CategoryPanel
+CategoryPanel
+
+#### ReportPanel
+ReportPanel
+
+#### ConfigPanel
+ConfigPanel
+
+#### BackupPanel
+BackupPanel
+
+#### RecoverPanel
+RecoverPanel
+
+#### MainFrame
+MainFrame
 
 
