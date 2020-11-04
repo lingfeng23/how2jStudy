@@ -1,5 +1,6 @@
 package panel;
 
+import listener.ToolBarListener;
 import util.CenterPanel;
 import util.GUIUtil;
 
@@ -26,7 +27,7 @@ public class MainPanel extends JPanel {
 	public JButton config = new JButton();
 	public JButton backup = new JButton();
 	public JButton recover = new JButton();
-	public CenterPanel centerPanel;
+	public CenterPanel workingPanel;
 
 	private MainPanel() {
 		GUIUtil.setImageIcon(spend, "home.png", "消费一览");
@@ -45,10 +46,24 @@ public class MainPanel extends JPanel {
 		toolBar.add(recover);
 		toolBar.setFloatable(false);
 
-		centerPanel = new CenterPanel(0.8);
+		workingPanel = new CenterPanel(0.8);
 		setLayout(new BorderLayout());
 		add(toolBar, BorderLayout.NORTH);
-		add(centerPanel, BorderLayout.CENTER);
+		add(workingPanel, BorderLayout.CENTER);
+
+		// 增加监听器
+		addListener();
+	}
+
+	private void addListener() {
+		ToolBarListener listener = new ToolBarListener();
+		spend.addActionListener(listener);
+		record.addActionListener(listener);
+		category.addActionListener(listener);
+		report.addActionListener(listener);
+		config.addActionListener(listener);
+		backup.addActionListener(listener);
+		recover.addActionListener(listener);
 	}
 
 	public static void main(String[] args) {

@@ -1,6 +1,9 @@
 package panel;
 
+import entity.Category;
+import listener.CategoryListener;
 import model.CategoryTableModel;
+import service.CategoryService;
 import util.ColorUtil;
 import util.GUIUtil;
 
@@ -38,6 +41,34 @@ public class CategoryPanel extends JPanel {
 		this.setLayout(new BorderLayout());
 		this.add(sp, BorderLayout.CENTER);
 		this.add(pSubmit, BorderLayout.SOUTH);
+
+		addListener();
+	}
+
+	public Category getSelectedCategory() {
+		int index = table.getSelectedRow();
+		return tableModel.categories.get(index);
+	}
+
+	public void updateData() {
+		tableModel.categories = new CategoryService().list();
+		table.updateUI();
+		table.getSelectionModel().setSelectionInterval(0, 0);
+		if (0 == tableModel.categories.size()) {
+			edit.setEnabled(false);
+			delete.setEnabled(false);
+		} else {
+			edit.setEnabled(true);
+			delete.setEnabled(true);
+		}
+
+	}
+
+	public void addListener() {
+		CategoryListener listener = new CategoryListener();
+		add.addActionListener(listener);
+		edit.addActionListener(listener);
+		delete.addActionListener(listener);
 	}
 
 	public static void main(String[] args) {

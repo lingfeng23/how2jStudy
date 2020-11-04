@@ -1,5 +1,8 @@
 package model;
 
+import entity.Category;
+import service.CategoryService;
+
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 import java.util.ArrayList;
@@ -13,14 +16,15 @@ import java.util.List;
  */
 public class CategoryTableModel implements TableModel {
 	String[] columnNames = new String[]{"分类名称", "消费次数"};
-	List<String> categories = new ArrayList<>();
+	//List<String> categories = new ArrayList<>();
+	public List<Category> categories = new CategoryService().list();
 
-	public CategoryTableModel() {
-		categories.add("餐饮");
-		categories.add("交通");
-		categories.add("住宿");
-		categories.add("话费");
-	}
+//	public CategoryTableModel() {
+//		categories.add("餐饮");
+//		categories.add("交通");
+//		categories.add("住宿");
+//		categories.add("话费");
+//	}
 
 	@Override
 	public int getRowCount() {
@@ -49,11 +53,14 @@ public class CategoryTableModel implements TableModel {
 
 	@Override
 	public Object getValueAt(int rowIndex, int columnIndex) {
+		Category category = categories.get(rowIndex);
 		if (0 == columnIndex) {
-			return categories.get(rowIndex);
+			//return categories.get(rowIndex);
+			return category.name;
 		}
 		if (1 == columnIndex) {
-			return 0;
+			//return 0;
+			return category.recordNumber;
 		}
 		return null;
 	}

@@ -1,5 +1,6 @@
 package panel;
 
+import listener.ConfigListener;
 import util.ColorUtil;
 import util.GUIUtil;
 
@@ -29,21 +30,27 @@ public class ConfigPanel extends JPanel {
 		GUIUtil.setColor(ColorUtil.GRAY, budget, mysql);
 		GUIUtil.setColor(ColorUtil.BLUE, submit);
 
-		JPanel pInput = new JPanel();
-		JPanel pSubmit = new JPanel();
+		JPanel inputPanel = new JPanel();
+		JPanel submitPanel = new JPanel();
 		int gap = 40;
-		pInput.setLayout(new GridLayout(4, 1, gap, gap));
+		inputPanel.setLayout(new GridLayout(4, 1, gap, gap));
 
-		pInput.add(budget);
-		pInput.add(textBudget);
-		pInput.add(mysql);
-		pInput.add(mysqlPath);
+		inputPanel.add(budget);
+		inputPanel.add(textBudget);
+		inputPanel.add(mysql);
+		inputPanel.add(mysqlPath);
+		submitPanel.add(submit);
+
 		this.setLayout(new BorderLayout());
-		this.add(pInput, BorderLayout.NORTH);
+		this.add(inputPanel, BorderLayout.NORTH);
+		this.add(submitPanel, BorderLayout.CENTER);
 
-		pSubmit.add(submit);
-		this.add(pSubmit, BorderLayout.CENTER);
+		addListener();
+	}
 
+	public void addListener() {
+		ConfigListener listener = new ConfigListener();
+		submit.addActionListener(listener);
 	}
 
 	public static void main(String[] args) {

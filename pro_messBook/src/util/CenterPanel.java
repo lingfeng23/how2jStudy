@@ -54,11 +54,11 @@ public class CenterPanel extends JPanel {
 		JFrame frame = new JFrame();
 		frame.setSize(200, 200);
 		frame.setLocationRelativeTo(null);
-		CenterPanel centerPanel = new CenterPanel(0.85, true);
-		frame.setContentPane(centerPanel);
+		CenterPanel workingPanel = new CenterPanel(0.85, true);
+		frame.setContentPane(workingPanel);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 		JButton button = new JButton("abc");
-		centerPanel.show(button);
+		workingPanel.show(button);
 	}
 }

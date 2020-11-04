@@ -111,5 +111,13 @@ MainFrame
 #### ConfigDao && CategoryDao && RecordDao
 ConfigDao && CategoryDao && RecordDao
  
+### 功能
 
+#### 启动类Bootstrap
+
+#### 主窗体工具栏
+
+#### 配置
+
+#### 消费分类
 
