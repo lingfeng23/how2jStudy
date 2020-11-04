@@ -1,5 +1,7 @@
 package util;
 
+import panel.WorkingPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -47,6 +49,10 @@ public class CenterPanel extends JPanel {
 			remove(com);
 		}
 		add(component);
+
+		if (component instanceof WorkingPanel) {
+			((WorkingPanel) component).updateData();
+		}
 		this.updateUI();
 	}
 

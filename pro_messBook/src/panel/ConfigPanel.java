@@ -1,6 +1,7 @@
 package panel;
 
 import listener.ConfigListener;
+import service.ConfigService;
 import util.ColorUtil;
 import util.GUIUtil;
 
@@ -13,7 +14,7 @@ import java.awt.*;
  * @project how2jStudy
  * @since 2020/11/2
  */
-public class ConfigPanel extends JPanel {
+public class ConfigPanel extends WorkingPanel {
 	static {
 		GUIUtil.useLNF();
 	}
@@ -46,6 +47,15 @@ public class ConfigPanel extends JPanel {
 		this.add(submitPanel, BorderLayout.CENTER);
 
 		addListener();
+	}
+
+	@Override
+	public void updateData() {
+		String budget = new ConfigService().get(ConfigService.budget);
+		String mysqlPath = new ConfigService().get(ConfigService.mysqlPath);
+		textBudget.setText(budget);
+		mysql.setText(mysqlPath);
+		textBudget.grabFocus();
 	}
 
 	public void addListener() {

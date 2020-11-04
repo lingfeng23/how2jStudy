@@ -16,7 +16,7 @@ import java.awt.*;
  * @project how2jStudy
  * @since 2020/11/2
  */
-public class CategoryPanel extends JPanel {
+public class CategoryPanel extends WorkingPanel {
 	static {
 		GUIUtil.useLNF();
 	}
