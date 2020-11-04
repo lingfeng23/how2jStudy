@@ -12,7 +12,7 @@ public class SpendPage {
 	// 今日消费
 	public String todaySpend;
 	// 日均消费
-	public String avgSpendPerDay;
+	public String dayAvgSpend;
 	// 本月剩余
 	public String monthAvailable;
 	// 日均可用
@@ -24,11 +24,11 @@ public class SpendPage {
 	// 是否超支
 	public boolean isOverSpend = false;
 
-	public SpendPage(int monthSpend, int todaySpend, int avgSpendPerDay, int monthAvailable, int dayAvgAvailable,
+	public SpendPage(int monthSpend, int todaySpend, int dayAvgSpend, int monthAvailable, int dayAvgAvailable,
 					 int monthLeftDay, int usagePercentage) {
 		this.monthSpend = "￥" + monthSpend;
 		this.todaySpend = "￥" + todaySpend;
-		this.avgSpendPerDay = "￥" + avgSpendPerDay;
+		this.dayAvgSpend = "￥" + dayAvgSpend;
 		if (monthAvailable < 0)
 			isOverSpend = true;
 		if (!isOverSpend) {

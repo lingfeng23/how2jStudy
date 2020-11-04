@@ -24,9 +24,9 @@ public class SpendPanel extends WorkingPanel {
 
 	public JLabel monthSpend = new JLabel("本月消费");
 	public JLabel todaySpend = new JLabel("今日消费");
-	public JLabel averageSpend = new JLabel("日均消费");
-	public JLabel monthLeft = new JLabel("本月剩余");
-	public JLabel averageDayLeft = new JLabel("日均可用");
+	public JLabel dayAvgSpend = new JLabel("日均消费");
+	public JLabel monthAvailable = new JLabel("本月剩余");
+	public JLabel dayAvgAvailable = new JLabel("日均可用");
 	public JLabel monthLeftDay = new JLabel("距离月末");
 
 	public JLabel monthSpendValue = new JLabel("￥2300");
@@ -42,7 +42,7 @@ public class SpendPanel extends WorkingPanel {
 		this.setLayout(new BorderLayout());
 		bar = new CircleProgressBar();
 		bar.setBackgroundColor(ColorUtil.BLUE);
-		GUIUtil.setColor(ColorUtil.GRAY, monthSpend, todaySpend, averageSpend, monthLeft, averageDayLeft,
+		GUIUtil.setColor(ColorUtil.GRAY, monthSpend, todaySpend, dayAvgSpend, monthAvailable, dayAvgAvailable,
 				monthLeftDay, averageSpendValue, monthLeftValue, averageDayLeftValue, monthLeftDayValue);
 		GUIUtil.setColor(ColorUtil.BLUE, monthSpendValue, todaySpendValue);
 		monthSpendValue.setFont(new Font("微软雅黑", Font.BOLD, 23));
@@ -72,9 +72,9 @@ public class SpendPanel extends WorkingPanel {
 	private JPanel south() {
 		JPanel panel = new JPanel();
 		panel.setLayout(new GridLayout(2, 4));
-		panel.add(averageSpend);
-		panel.add(monthLeft);
-		panel.add(averageDayLeft);
+		panel.add(dayAvgSpend);
+		panel.add(monthAvailable);
+		panel.add(dayAvgAvailable);
 		panel.add(monthLeftDay);
 		panel.add(averageSpendValue);
 		panel.add(monthLeftValue);
@@ -92,19 +92,19 @@ public class SpendPanel extends WorkingPanel {
 		SpendPage spend = new SpendService().getSpendPage();
 		monthSpend.setText(spend.monthSpend);
 		todaySpend.setText(spend.todaySpend);
-		averageSpend.setText(spend.avgSpendPerDay);
-		monthLeft.setText(spend.monthAvailable);
-		averageDayLeft.setText(spend.dayAvgAvailable);
+		dayAvgSpend.setText(spend.dayAvgSpend);
+		monthAvailable.setText(spend.monthAvailable);
+		dayAvgAvailable.setText(spend.dayAvgAvailable);
 		monthLeftDay.setText(spend.monthLeftDay);
 
 		bar.setProcess(spend.usagePercentage);
 		if (spend.isOverSpend) {
-			monthLeft.setForeground(ColorUtil.WARN);
+			monthAvailable.setForeground(ColorUtil.WARN);
 			monthSpend.setForeground(ColorUtil.WARN);
 			todaySpend.setForeground(ColorUtil.WARN);
 
 		} else {
-			monthLeft.setForeground(ColorUtil.GRAY);
+			monthAvailable.setForeground(ColorUtil.GRAY);
 			monthSpend.setForeground(ColorUtil.BLUE);
 			todaySpend.setForeground(ColorUtil.BLUE);
 		}
