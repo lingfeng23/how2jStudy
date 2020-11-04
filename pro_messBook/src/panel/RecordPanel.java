@@ -1,7 +1,10 @@
 package panel;
 
+import entity.Category;
+import listener.RecordListener;
 import model.CategoryComboBoxModel;
 import org.jdesktop.swingx.JXDatePicker;
+import service.CategoryService;
 import util.ColorUtil;
 import util.GUIUtil;
 
@@ -15,7 +18,7 @@ import java.util.Date;
  * @project how2jStudy
  * @since 2020/11/2
  */
-public class RecordPanel extends JPanel {
+public class RecordPanel extends WorkingPanel {
 	static {
 		GUIUtil.useLNF();
 	}
@@ -29,14 +32,14 @@ public class RecordPanel extends JPanel {
 
 	public JTextField textSpend = new JTextField("0");
 	public CategoryComboBoxModel boxModel = new CategoryComboBoxModel();
-	public JComboBox<String> boxCategory = new JComboBox<>(boxModel);
+	public JComboBox<Category> boxCategory = new JComboBox<>(boxModel);
 	public JTextField textComment = new JTextField();
 	public JXDatePicker datePicker = new JXDatePicker(new Date());
-	JButton button = new JButton("记一笔");
+	JButton submit = new JButton("记一笔");
 
 	public RecordPanel() {
 		GUIUtil.setColor(ColorUtil.GRAY, spend, category, comment, date);
-		GUIUtil.setColor(ColorUtil.BLUE, button);
+		GUIUtil.setColor(ColorUtil.BLUE, submit);
 		JPanel pInput = new JPanel();
 		JPanel pSubmit = new JPanel();
 		int gap = 40;
@@ -50,11 +53,39 @@ public class RecordPanel extends JPanel {
 		pInput.add(textComment);
 		pInput.add(date);
 		pInput.add(datePicker);
-		pSubmit.add(button);
+		pSubmit.add(submit);
 
 		this.setLayout(new BorderLayout());
 		this.add(pInput, BorderLayout.NORTH);
 		this.add(pSubmit, BorderLayout.CENTER);
+
+		addListener();
+	}
+
+	public Category getSelectedCategory() {
+		return (Category) boxCategory.getSelectedItem();
+	}
+
+	@Override
+	public void updateData() {
+		boxModel.categories = new CategoryService().list();
+		boxCategory.updateUI();
+		resetInput();
+		textSpend.grabFocus();
+	}
+
+	public void resetInput() {
+		textSpend.setText("0");
+		textComment.setText("");
+		if (0 != boxModel.categories.size())
+			boxCategory.setSelectedIndex(0);
+		datePicker.setDate(new Date());
+	}
+
+	@Override
+	public void addListener() {
+		RecordListener listener = new RecordListener();
+		submit.addActionListener(listener);
 	}
 
 	public static void main(String[] args) {
