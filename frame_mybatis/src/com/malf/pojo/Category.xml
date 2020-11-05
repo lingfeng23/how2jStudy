@@ -48,6 +48,11 @@
 		FROM category
 	</select>
 
+	<select id="listCategoryByPage" resultType="Category">
+		SELECT *
+		FROM category
+	</select>
+
 	<select id="listCategoryByName"  parameterType="string" resultType="Category">
 		SELECT *
 		FROM category

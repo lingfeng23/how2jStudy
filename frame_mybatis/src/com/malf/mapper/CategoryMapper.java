@@ -31,4 +31,7 @@ public interface CategoryMapper {
 					many = @Many(select = "com.malf.mapper.ProductMapper.listByCategory"))
 	})
 	public List<Category> list();
+
+	@Select(" select * from category limit #{start}, #{count}")
+	public List<Category> listByPage(@Param("start") int start, @Param("count")int count);
 }

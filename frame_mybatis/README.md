@@ -46,13 +46,13 @@
 
 #### Mybatis 动态SQL语句 略
 
-### 相关概念
+### 相关概念 DONE
 
 #### Mybatis 日志 DONE
 - 使用 log4j依赖包
 - 在 src 目录下增加 log4j 配置文件`log4j.properties`
  
-#### Mybatis 事务
+#### Mybatis 事务 DONE
 - 在 Mysql 中，只有当表的类型是 INNODB 的时候，才支持事务
 - 查询表的类型的SQL
     ```
@@ -62,7 +62,7 @@
     ```
     alter table tablename engine = innodb;
     ```
-#### Mybatis 延迟加载
+#### Mybatis 延迟加载 DONE
 在 mybatis-config.xml 中配置
 ```
 <settings>
@@ -72,3 +72,30 @@
     <setting name="aggressiveLazyLoading" value="false"/>
 </settings>
 ```
+
+#### Mybatis 分页 DONE
+
+#### Mybatis PageHelper DONE
+
+#### Mybatis 一级缓存 略
+在同一个 Session 中只需查询一次
+
+#### Mybatis 二级缓存 DONE
+在同一个 SessionFactory 中只需查询一次
+- 在 mybatis-config.xml 中配置
+    ```
+    <setting name="cacheEnabled" value="true"/>
+    ```
+- 在 xxx.xml(Category.xml) 文件中增加配置
+    ```
+    <mapper namespace="...">
+        <cache/>
+    </mapper>
+    ```
+- 实体类(Category)实现序列化接口 Serializable
+
+#### Mybatis c3p0连接池 & 查询总数 & 逆向工程 略 
+
+
+
+

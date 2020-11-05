@@ -1,5 +1,7 @@
 package com.malf.test;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.malf.mapper.CategoryMapper;
 import com.malf.mapper.OrderMapper;
 import com.malf.mapper.ProductMapper;
@@ -117,14 +119,14 @@ public class MybatisTest {
 
 		// Category(注解方式)
 		// 新增
-		Category category = new Category();
-		category.setName("床前明月光");
-		categoryMapper.add(category);
-
-		// 开启事务后在同一事务中的操作同进退
-		Category longCategory = new Category();
-		longCategory.setName("床前明月光，疑是地上霜。举头望明月，低头思故乡。床前明月光，疑是地上霜。举头望明月，低头思故乡。");
-		categoryMapper.add(longCategory);
+//		Category category = new Category();
+//		category.setName("床前明月光");
+//		categoryMapper.add(category);
+//
+//		// 开启事务后在同一事务中的操作同进退
+//		Category longCategory = new Category();
+//		longCategory.setName("床前明月光，疑是地上霜。举头望明月，低头思故乡。床前明月光，疑是地上霜。举头望明月，低头思故乡。");
+//		categoryMapper.add(longCategory);
 
 //
 //		// 获取 & 更新
@@ -170,6 +172,23 @@ public class MybatisTest {
 //			}
 //
 //		}
+
+		// 分页
+//		List<Category> cs = categoryMapper.listByPage(0, 5);
+//		for (Category c : cs) {
+//			System.out.println(c);
+//		}
+
+		// PageHelper 插件
+		PageHelper.offsetPage(0, 5);
+
+		List<Category> cs = session.selectList("listCategoryByPage");
+		for (Category c : cs) {
+			System.out.println(c.getName());
+		}
+		PageInfo pageInfo = new PageInfo<>(cs);
+		System.out.println("总数：" + pageInfo.getTotal());
+		System.out.println(pageInfo);
 
 		session.commit();
 		session.close();
