@@ -20,6 +20,7 @@
 		FROM category c
 		LEFT JOIN product p ON c.id = p.cid
 	</select>
+
 	<insert id="addCategory" parameterType="Category" >
 		INSERT INTO category
 		(name) VALUES (#{name})

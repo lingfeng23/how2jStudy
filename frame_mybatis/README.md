@@ -22,4 +22,33 @@
 
 #### Mybatis 多对多 略
 
-### 动态SQL
+### 动态SQL DONE
+
+#### Mybatis if DONE
+
+#### Mybatis where DONE
+
+#### Mybatis choose DONE
+
+#### Mybatis foreach DONE
+
+#### Mybatis bind DONE
+
+### 注解 DONE
+
+#### Mybatis CRUD DONE
+
+#### Mybatis 一对多 DONE
+
+#### Mybatis 多对一 DONE
+
+#### Mybatis 多对多 DONE
+
+#### Mybatis 动态SQL语句 略
+
+### 相关概念
+
+#### Mybatis 日志 DONE
+- 使用 log4j依赖包
+- 在 src 目录下增加 log4j 配置文件`log4j.properties`
+ 

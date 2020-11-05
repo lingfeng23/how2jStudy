@@ -19,5 +19,10 @@
 	</environments>
 	<mappers>
 		<mapper resource="com/malf/pojo/Category.xml"/>
+		<mapper resource="com/malf/pojo/Product.xml"/>
+		<mapper class="com.malf.mapper.CategoryMapper"/>
+		<mapper class="com.malf.mapper.ProductMapper"/>
+		<mapper class="com.malf.mapper.OrderMapper"/>
+		<mapper class="com.malf.mapper.OrderItemMapper"/>
 	</mappers>
 </configuration>

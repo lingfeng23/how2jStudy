@@ -22,7 +22,7 @@
 
 创建数据库
 ```
-create database messBook;
+create database how2java;
 ```
 根据业务需要，有三个表：
 - 配置表信息 config
@@ -32,7 +32,40 @@ create database messBook;
 - 消费记录表 record
     - 用于存放每一笔的消费记录，并且会用到消费分类
     
-表结构及关系参考 messbook.sql
+表结构及关系参考：
+```
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+DROP TABLE IF EXISTS `category`;
+CREATE TABLE `category`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '分类名称',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+DROP TABLE IF EXISTS `config`;
+CREATE TABLE `config`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `key_` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '配置信息的键',
+  `value` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '配置信息的值',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+DROP TABLE IF EXISTS `record`;
+CREATE TABLE `record`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `spend` int(11) NULL DEFAULT NULL COMMENT '本次消费',
+  `cid` int(11) NULL DEFAULT NULL COMMENT '消费分类ID',
+  `comment` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
+  `date` date NULL DEFAULT NULL COMMENT '消费时间',
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `fk_record_category`(`cid`) USING BTREE,
+  CONSTRAINT `fk_record_category` FOREIGN KEY (`cid`) REFERENCES `category` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+SET FOREIGN_KEY_CHECKS = 1;
+```
 
 ### 原型-基础
 - 首先是Frame
