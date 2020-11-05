@@ -23,8 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6b59b12-e5f3-4032-a5c4-8da8f020a155" name="malf" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/com/malf/config/RedisCacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/target/classes/com/malf/IndexGatherStoreApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/target/classes/com/malf/config/RedisCacheConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/target/classes/com/malf/controller/IndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/target/classes/com/malf/pojo/Index.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/target/classes/com/malf/service/IndexService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index-gather-store-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-gather-store-service/src/main/java/com/malf/IndexGatherStoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/com/malf/IndexGatherStoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-gather-store-service/src/main/java/com/malf/service/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/com/malf/service/IndexService.java" afterDir="false" />
     </list>
     <list id="40a43b5b-c7de-4183-bc7d-5eccbfd3a69c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +85,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27586207" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -168,7 +177,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604583749330</updated>
-      <workItem from="1604583750499" duration="2697000" />
+      <workItem from="1604583750499" duration="3306000" />
     </task>
     <task id="LOCAL-00001" summary="趋势投资父项目初始化">
       <created>1604584219603</created>
@@ -191,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604586201903</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="趋势投资项目：采集和储存微服务(断路器)">
+      <created>1604586689163</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604586689163</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +228,8 @@
     <MESSAGE value="趋势投资父项目初始化" />
     <MESSAGE value="趋势投资项目：服务注册中心 &amp;&amp; 第三方数据服务" />
     <MESSAGE value="趋势投资项目：采集和储存微服务(代码采集)" />
-    <option name="LAST_COMMIT_MESSAGE" value="趋势投资项目：采集和储存微服务(代码采集)" />
+    <MESSAGE value="趋势投资项目：采集和储存微服务(断路器)" />
+    <option name="LAST_COMMIT_MESSAGE" value="趋势投资项目：采集和储存微服务(断路器)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -220,54 +237,54 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604585794317" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604585830456">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604586752254">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604585830456" />
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom" timestamp="1604586177823">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604586752254" />
+    <state width="1236" height="236" key="GridCell.Tab.0.bottom" timestamp="1604587056391">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604586177823" />
-    <state width="1236" height="259" key="GridCell.Tab.0.center" timestamp="1604586177822">
+    <state width="1236" height="236" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604587056391" />
+    <state width="1236" height="236" key="GridCell.Tab.0.center" timestamp="1604587056390">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604586177822" />
-    <state width="1236" height="259" key="GridCell.Tab.0.left" timestamp="1604586177822">
+    <state width="1236" height="236" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604587056390" />
+    <state width="1236" height="236" key="GridCell.Tab.0.left" timestamp="1604587056389">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604586177822" />
-    <state width="1236" height="259" key="GridCell.Tab.0.right" timestamp="1604586177823">
+    <state width="1236" height="236" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604587056389" />
+    <state width="1236" height="236" key="GridCell.Tab.0.right" timestamp="1604587056391">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604586177823" />
-    <state width="1236" height="259" key="GridCell.Tab.1.bottom" timestamp="1604586177824">
+    <state width="1236" height="236" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604587056391" />
+    <state width="1236" height="236" key="GridCell.Tab.1.bottom" timestamp="1604587056392">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604586177824" />
-    <state width="1236" height="259" key="GridCell.Tab.1.center" timestamp="1604586177823">
+    <state width="1236" height="236" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604587056392" />
+    <state width="1236" height="236" key="GridCell.Tab.1.center" timestamp="1604587056392">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604586177823" />
-    <state width="1236" height="259" key="GridCell.Tab.1.left" timestamp="1604586177823">
+    <state width="1236" height="236" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604587056392" />
+    <state width="1236" height="236" key="GridCell.Tab.1.left" timestamp="1604587056391">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604586177823" />
-    <state width="1236" height="259" key="GridCell.Tab.1.right" timestamp="1604586177824">
+    <state width="1236" height="236" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604587056391" />
+    <state width="1236" height="236" key="GridCell.Tab.1.right" timestamp="1604587056392">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604586177824" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1604584746624">
+    <state width="1236" height="236" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604587056392" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1604586990115">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604584746624" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604586990115" />
     <state x="471" y="210" key="VCS.EditChangelistDialog" timestamp="1604583844864">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="471" y="210" key="VCS.EditChangelistDialog/0.0.1280.680@0.0.1280.680" timestamp="1604583844864" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1604586215018">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1604586695756">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604586215018" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604586695756" />
     <state x="28" y="1" key="new project wizard" timestamp="1604585681214">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
