@@ -116,10 +116,16 @@ public class MybatisTest {
 //		}
 
 		// Category(注解方式)
-//		// 新增
-//		Category category = new Category();
-//		category.setName("窗帘布艺");
-//		categoryMapper.add(category);
+		// 新增
+		Category category = new Category();
+		category.setName("床前明月光");
+		categoryMapper.add(category);
+
+		// 开启事务后在同一事务中的操作同进退
+		Category longCategory = new Category();
+		longCategory.setName("床前明月光，疑是地上霜。举头望明月，低头思故乡。床前明月光，疑是地上霜。举头望明月，低头思故乡。");
+		categoryMapper.add(longCategory);
+
 //
 //		// 获取 & 更新
 //		category = categoryMapper.get(2);
@@ -152,18 +158,18 @@ public class MybatisTest {
 //		}
 
 		// 注解(多对多关系)
-		List<Order> orders = orderMapper.list();
-		for (Order o : orders) {
-			System.out.println(o.getCode());
-			List<OrderItem> ois = o.getOrderItems();
-			if (null != ois) {
-				for (OrderItem oi : ois) {
-					System.out.format("\t%s\t%f\t%d%n", oi.getProduct().getName(),
-							oi.getProduct().getPrice(), oi.getNumber());
-				}
-			}
-
-		}
+//		List<Order> orders = orderMapper.list();
+//		for (Order o : orders) {
+//			System.out.println(o.getCode());
+//			List<OrderItem> ois = o.getOrderItems();
+//			if (null != ois) {
+//				for (OrderItem oi : ois) {
+//					System.out.format("\t%s\t%f\t%d%n", oi.getProduct().getName(),
+//							oi.getProduct().getPrice(), oi.getNumber());
+//				}
+//			}
+//
+//		}
 
 		session.commit();
 		session.close();
