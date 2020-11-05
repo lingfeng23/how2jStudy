@@ -52,15 +52,15 @@ public class ConfigPanel extends WorkingPanel {
 	@Override
 	public void updateData() {
 		String budget = new ConfigService().get(ConfigService.budget);
-		String mysqlPath = new ConfigService().get(ConfigService.mysqlPath);
+		String mysql = new ConfigService().get(ConfigService.mysqlPath);
 		textBudget.setText(budget);
-		mysql.setText(mysqlPath);
+		mysqlPath.setText(mysql);
 		textBudget.grabFocus();
 	}
 
 	public void addListener() {
-		ConfigListener listener = new ConfigListener();
-		submit.addActionListener(listener);
+		ConfigListener l = new ConfigListener();
+		submit.addActionListener(l);
 	}
 
 	public static void main(String[] args) {

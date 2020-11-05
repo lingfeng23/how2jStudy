@@ -9,7 +9,7 @@ import javax.swing.*;
 
 /**
  * @author malf
- * @description TODO
+ * @description 启动类
  * @project how2jStudy
  * @since 2020/11/2
  */
