@@ -44,3 +44,5 @@
 ## 实践项目(pro_)
 
 ### 一本糊涂账(pro_messBook)
+
+### 趋势投资(trendInvestment)
