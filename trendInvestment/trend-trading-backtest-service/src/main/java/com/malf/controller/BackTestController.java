@@ -3,6 +3,7 @@ package com.malf.controller;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
 import com.malf.pojo.IndexData;
+import com.malf.pojo.Profit;
 import com.malf.service.BackTestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -33,10 +34,17 @@ public class BackTestController {
 		String indexStartDate = allIndexDatas.get(0).getDate();
 		String indexEndDate = allIndexDatas.get(allIndexDatas.size() - 1).getDate();
 		allIndexDatas = filterByDateRange(allIndexDatas, strStartDate, strEndDate);
+		int ma = 20;
+		float sellRate = 0.95f;
+		float buyRate = 1.05f;
+		float serviceCharge = 0f;
+		Map<String, ?> simulateResult = backTestService.simulate(ma, sellRate, buyRate, serviceCharge, allIndexDatas);
+		List<Profit> profits = (List<Profit>) simulateResult.get("profits");
 		Map<String, Object> result = new HashMap<>();
 		result.put("indexDatas", allIndexDatas);
 		result.put("indexStartDate", indexStartDate);
 		result.put("indexEndDate", indexEndDate);
+		result.put("profits", profits);
 		return result;
 	}
 
