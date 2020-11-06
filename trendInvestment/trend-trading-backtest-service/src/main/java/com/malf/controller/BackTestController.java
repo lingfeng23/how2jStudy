@@ -4,6 +4,7 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
 import com.malf.pojo.IndexData;
 import com.malf.pojo.Profit;
+import com.malf.pojo.Trade;
 import com.malf.service.BackTestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -40,11 +41,13 @@ public class BackTestController {
 		float serviceCharge = 0f;
 		Map<String, ?> simulateResult = backTestService.simulate(ma, sellRate, buyRate, serviceCharge, allIndexDatas);
 		List<Profit> profits = (List<Profit>) simulateResult.get("profits");
+		List<Trade> trades = (List<Trade>) simulateResult.get("trades");
 		Map<String, Object> result = new HashMap<>();
 		result.put("indexDatas", allIndexDatas);
 		result.put("indexStartDate", indexStartDate);
 		result.put("indexEndDate", indexEndDate);
 		result.put("profits", profits);
+		result.put("trades", trades);
 		return result;
 	}
 

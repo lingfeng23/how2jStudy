@@ -3,6 +3,7 @@ package com.malf.service;
 import com.malf.client.IndexDataClient;
 import com.malf.pojo.IndexData;
 import com.malf.pojo.Profit;
+import com.malf.pojo.Trade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,13 +28,15 @@ public class BackTestService {
 
 	public Map<String, Object> simulate(int ma, float sellRate, float buyRate, float serviceCharge, List<IndexData> indexDatas) {
 		List<Profit> profits = new ArrayList<>();
+		List<Trade> trades = new ArrayList<>();
 		float initCash = 1000;
 		float cash = initCash;
 		float share = 0;
 		float value = 0;
 		float init = 0;
-		if (!indexDatas.isEmpty())
+		if (!indexDatas.isEmpty()) {
 			init = indexDatas.get(0).getClosePoint();
+		}
 		for (int i = 0; i < indexDatas.size(); i++) {
 			IndexData indexData = indexDatas.get(i);
 			float closePoint = indexData.getClosePoint();
@@ -49,6 +52,12 @@ public class BackTestService {
 					if (0 == share) {
 						share = cash / closePoint;
 						cash = 0;
+						Trade trade = new Trade();
+						trade.setBuyDate(indexData.getDate());
+						trade.setBuyClosePoint(indexData.getClosePoint());
+						trade.setSellDate("n/a");
+						trade.setSellClosePoint(0);
+						trades.add(trade);
 					}
 				}
 				//sell 低于了卖点
@@ -57,6 +66,11 @@ public class BackTestService {
 					if (0 != share) {
 						cash = closePoint * share * (1 - serviceCharge);
 						share = 0;
+						Trade trade = trades.get(trades.size() - 1);
+						trade.setSellDate(indexData.getDate());
+						trade.setSellClosePoint(indexData.getClosePoint());
+						float rate = cash / initCash;
+						trade.setRate(rate);
 					}
 				} else {
 					//do nothing
@@ -71,12 +85,11 @@ public class BackTestService {
 			Profit profit = new Profit();
 			profit.setDate(indexData.getDate());
 			profit.setValue(rate * init);
-			System.out.println("profit.value:" + profit.getValue());
 			profits.add(profit);
-
 		}
 		Map<String, Object> map = new HashMap<>();
 		map.put("profits", profits);
+		map.put("trades", trades);
 		return map;
 	}
 

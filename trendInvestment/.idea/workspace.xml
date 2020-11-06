@@ -23,10 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6b59b12-e5f3-4032-a5c4-8da8f020a155" name="malf" comment="">
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/pojo/Profit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/pojo/Trade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/controller/BackTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/controller/BackTestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/service/BackTestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/service/BackTestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/templates/include/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/templates/include/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/templates/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/templates/view.html" afterDir="false" />
     </list>
     <list id="40a43b5b-c7de-4183-bc7d-5eccbfd3a69c" name="Default Changelist" comment="" />
@@ -343,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604641808327</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="趋势投资分析：模拟回测-收益对比图(DONE)">
+      <created>1604642375849</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1604642375849</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +388,8 @@
     <MESSAGE value="趋势投资分析：模拟回测-指数基础数据(DONE)" />
     <MESSAGE value="趋势投资分析：模拟回测-切换指数(DONE)" />
     <MESSAGE value="趋势投资分析：模拟回测-日期(DONE)" />
-    <option name="LAST_COMMIT_MESSAGE" value="趋势投资分析：模拟回测-日期(DONE)" />
+    <MESSAGE value="趋势投资分析：模拟回测-收益对比图(DONE)" />
+    <option name="LAST_COMMIT_MESSAGE" value="趋势投资分析：模拟回测-收益对比图(DONE)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -392,46 +401,46 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1604630173136" />
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1604641905933">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1604642636042">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604641905933" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604642222610">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604642636042" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604642947551">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604642222610" />
-    <state width="1236" height="258" key="GridCell.Tab.0.bottom" timestamp="1604641796366">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604642947551" />
+    <state width="1236" height="109" key="GridCell.Tab.0.bottom" timestamp="1604642361924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="258" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604641796366" />
-    <state width="1236" height="258" key="GridCell.Tab.0.center" timestamp="1604641796366">
+    <state width="1236" height="109" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604642361924" />
+    <state width="1236" height="109" key="GridCell.Tab.0.center" timestamp="1604642361924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="258" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604641796366" />
-    <state width="1236" height="258" key="GridCell.Tab.0.left" timestamp="1604641796366">
+    <state width="1236" height="109" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604642361924" />
+    <state width="1236" height="109" key="GridCell.Tab.0.left" timestamp="1604642361924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="258" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604641796366" />
-    <state width="1236" height="258" key="GridCell.Tab.0.right" timestamp="1604641796366">
+    <state width="1236" height="109" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604642361924" />
+    <state width="1236" height="109" key="GridCell.Tab.0.right" timestamp="1604642361924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="258" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604641796366" />
-    <state width="1236" height="258" key="GridCell.Tab.1.bottom" timestamp="1604641796367">
+    <state width="1236" height="109" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604642361924" />
+    <state width="1236" height="109" key="GridCell.Tab.1.bottom" timestamp="1604642361924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="258" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604641796367" />
-    <state width="1236" height="258" key="GridCell.Tab.1.center" timestamp="1604641796366">
+    <state width="1236" height="109" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604642361924" />
+    <state width="1236" height="109" key="GridCell.Tab.1.center" timestamp="1604642361924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="258" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604641796366" />
-    <state width="1236" height="258" key="GridCell.Tab.1.left" timestamp="1604641796366">
+    <state width="1236" height="109" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604642361924" />
+    <state width="1236" height="109" key="GridCell.Tab.1.left" timestamp="1604642361924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="258" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604641796366" />
-    <state width="1236" height="258" key="GridCell.Tab.1.right" timestamp="1604641796366">
+    <state width="1236" height="109" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604642361924" />
+    <state width="1236" height="109" key="GridCell.Tab.1.right" timestamp="1604642361924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="258" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604641796366" />
+    <state width="1236" height="109" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604642361924" />
     <state x="398" y="42" key="RollbackChangesDialog" timestamp="1604588910454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
