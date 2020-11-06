@@ -22,20 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b59b12-e5f3-4032-a5c4-8da8f020a155" name="malf" comment="">
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/TrendTradingBackTestServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/client/IndexDataClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/client/IndexDataClientFeignHystrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/controller/BackTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/pojo/IndexData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/java/com/malf/service/BackTestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a6b59b12-e5f3-4032-a5c4-8da8f020a155" name="malf" comment="" />
     <list id="40a43b5b-c7de-4183-bc7d-5eccbfd3a69c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +85,7 @@
       <recent name="E:\malf\how2jStudy\trendInvestment\third-part-index-data-project\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TrendTradingBackTestServiceApplication">
+  <component name="RunManager" selected="Spring Boot.IndexZuulServiceApplication">
     <configuration name="IndexCodesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.malf.IndexCodesApplication" />
       <module name="index-codes-service" />
@@ -149,15 +136,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexGatherStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="index-gather-store-service" />
+    <configuration name="IndexZuulServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="index-zuul-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.malf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malf.IndexGatherStoreApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malf.IndexZuulServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,18 +164,18 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.EurekaServerApplication" />
-      <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
       <item itemvalue="Spring Boot.IndexDataApplication" />
       <item itemvalue="Application.IndexCodesApplication" />
       <item itemvalue="Spring Boot.TrendTradingBackTestServiceApplication" />
+      <item itemvalue="Spring Boot.IndexZuulServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.IndexZuulServiceApplication" />
         <item itemvalue="Spring Boot.TrendTradingBackTestServiceApplication" />
         <item itemvalue="Spring Boot.IndexDataApplication" />
         <item itemvalue="Application.IndexCodesApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
-        <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604631184187</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="趋势投资分析-模拟回测微服务(DONE)">
+      <created>1604631951572</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604631951572</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +306,8 @@
     <MESSAGE value="趋势投资项目：指数数据微服务" />
     <MESSAGE value="remove unused files" />
     <MESSAGE value="趋势投资分析-网关(DONE)" />
-    <option name="LAST_COMMIT_MESSAGE" value="趋势投资分析-网关(DONE)" />
+    <MESSAGE value="趋势投资分析-模拟回测微服务(DONE)" />
+    <option name="LAST_COMMIT_MESSAGE" value="趋势投资分析-模拟回测微服务(DONE)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -332,38 +327,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604631416258" />
-    <state width="1236" height="141" key="GridCell.Tab.0.bottom" timestamp="1604631242020">
+    <state width="1236" height="240" key="GridCell.Tab.0.bottom" timestamp="1604631901901">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="141" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604631242020" />
-    <state width="1236" height="141" key="GridCell.Tab.0.center" timestamp="1604631242019">
+    <state width="1236" height="240" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
+    <state width="1236" height="240" key="GridCell.Tab.0.center" timestamp="1604631901901">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="141" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604631242019" />
-    <state width="1236" height="141" key="GridCell.Tab.0.left" timestamp="1604631242019">
+    <state width="1236" height="240" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
+    <state width="1236" height="240" key="GridCell.Tab.0.left" timestamp="1604631901901">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="141" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604631242019" />
-    <state width="1236" height="141" key="GridCell.Tab.0.right" timestamp="1604631242020">
+    <state width="1236" height="240" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
+    <state width="1236" height="240" key="GridCell.Tab.0.right" timestamp="1604631901901">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="141" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604631242020" />
-    <state width="1236" height="198" key="GridCell.Tab.1.bottom" timestamp="1604630948983">
+    <state width="1236" height="240" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
+    <state width="1236" height="240" key="GridCell.Tab.1.bottom" timestamp="1604631901902">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="198" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604630948983" />
-    <state width="1236" height="198" key="GridCell.Tab.1.center" timestamp="1604630948983">
+    <state width="1236" height="240" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604631901902" />
+    <state width="1236" height="240" key="GridCell.Tab.1.center" timestamp="1604631901902">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="198" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604630948983" />
-    <state width="1236" height="198" key="GridCell.Tab.1.left" timestamp="1604630948983">
+    <state width="1236" height="240" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604631901902" />
+    <state width="1236" height="240" key="GridCell.Tab.1.left" timestamp="1604631901901">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="198" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604630948983" />
-    <state width="1236" height="198" key="GridCell.Tab.1.right" timestamp="1604630948983">
+    <state width="1236" height="240" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
+    <state width="1236" height="240" key="GridCell.Tab.1.right" timestamp="1604631901902">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="198" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604630948983" />
+    <state width="1236" height="240" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604631901902" />
     <state x="398" y="42" key="RollbackChangesDialog" timestamp="1604588910454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -376,10 +371,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="471" y="210" key="VCS.EditChangelistDialog/0.0.1280.680@0.0.1280.680" timestamp="1604583844864" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1604622129725">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1604631957896">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604622129725" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604631957896" />
     <state x="28" y="1" key="new project wizard" timestamp="1604631236563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
