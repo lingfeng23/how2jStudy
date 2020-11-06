@@ -73,3 +73,14 @@ Feign 是对 Ribbon的封装，使用注解的方式，调用起来更简单，�
 - 首先数据微服务和视图微服务都被 eureka 管理起来了。
 - 数据服务是由两个实例的集群组成的，端口分别是 8001，8002
 - 视图微服务通过注册中心调用微服务，然后负载均衡到 8001 或者 8002 端口的应用上。
+
+### 服务链路追踪
+通过 zipkin 服务链路追踪服务器这个东西来用图片进行识别微服务之间的调用关系
+- 操作步骤
+    - 运行启动 /parent/lib 下的 zipkin-server-2.10.1-exec.jar
+    ```
+    java -jar zipkin-server-2.10.1-exec.jar
+    ```
+    - 挨个启动 eureka-server, 改造后的 product-data-service 和 product-view-service-feign
+    - 访问一次 http://127.0.0.1:8012/products 通过 视图微服务去访问数据微服务，这样链路追踪服务器才知道有这事儿发生
+    - 然后打开链路追踪服务器 http://localhost:9411/zipkin/dependency/ 就可以看到视图微服务调用数据微服务的图形了。

@@ -23,22 +23,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1227461-053c-434e-acde-101a87bc21e5" name="malf" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-feign/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/ProductViewServiceFeignApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/client/ProductClientFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/pojo/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/resources/templates/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/classes/com/malf/EurekaServerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/test-classes/com/malf/AppTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/zipkin-server-2.10.1-exec.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/target/classes/com/malf/ProductDataServiceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/target/classes/com/malf/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/target/classes/com/malf/pojo/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/target/classes/com/malf/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/target/classes/com/malf/ProductViewServiceFeignApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/target/classes/com/malf/client/ProductClientFeign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/target/classes/com/malf/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/target/classes/com/malf/pojo/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/target/classes/com/malf/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/target/classes/templates/products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-view-service-ribbon/src/main/java/com/malf/ProductViewServiceRibbonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-view-service-ribbon/src/main/java/com/malf/ProductViewServiceRibbonApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-data-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-data-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/ProductDataServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/ProductDataServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-data-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-data-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-view-service-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-view-service-feign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/ProductViewServiceFeignApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/ProductViewServiceFeignApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-view-service-feign/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/resources/application.yml" afterDir="false" />
     </list>
     <list id="34efca42-87e0-46d5-a0d7-cc27f01ccfed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +100,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/product-view-service-feign/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
@@ -101,6 +110,7 @@
       <recent name="com.malf.pojo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\malf\how2jStudy\distributed\parent\lib" />
       <recent name="E:\malf\how2jStudy\distributed\parent\product-view-service-feign\src\main\resources" />
       <recent name="E:\malf\how2jStudy\distributed\parent\product-view-service-feign\src\main\java" />
     </key>
@@ -179,9 +189,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ProductViewServiceFeignApplication" />
-        <item itemvalue="Spring Boot.ProductViewServiceRibbonApplication" />
         <item itemvalue="Spring Boot.ProductDataServiceApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.ProductViewServiceRibbonApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +207,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604652336831</updated>
-      <workItem from="1604652338031" duration="5296000" />
+      <workItem from="1604652338031" duration="6259000" />
     </task>
     <task id="LOCAL-00001" summary="分布式与集群：springCloud-服务注册中心(DONE)">
       <created>1604652749120</created>
@@ -227,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604656608183</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="分布式与集群：springCloud-视图微服务-Feign(DONE)">
+      <created>1604657656544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604657656544</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +265,8 @@
     <MESSAGE value="分布式与集群：springCloud-服务注册中心(DONE)" />
     <MESSAGE value="分布式与集群：springCloud-注册数据微服务(DONE)" />
     <MESSAGE value="分布式与集群：springCloud-视图微服务-Ribbon(DONE)" />
-    <option name="LAST_COMMIT_MESSAGE" value="分布式与集群：springCloud-视图微服务-Ribbon(DONE)" />
+    <MESSAGE value="分布式与集群：springCloud-视图微服务-Feign(DONE)" />
+    <option name="LAST_COMMIT_MESSAGE" value="分布式与集群：springCloud-视图微服务-Feign(DONE)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -268,38 +286,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604657640266" />
-    <state width="1236" height="262" key="GridCell.Tab.0.bottom" timestamp="1604657487480">
+    <state width="1236" height="204" key="GridCell.Tab.0.bottom" timestamp="1604658473743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="262" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
-    <state width="1236" height="262" key="GridCell.Tab.0.center" timestamp="1604657487480">
+    <state width="1236" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604658473743" />
+    <state width="1236" height="204" key="GridCell.Tab.0.center" timestamp="1604658473743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="262" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
-    <state width="1236" height="262" key="GridCell.Tab.0.left" timestamp="1604657487480">
+    <state width="1236" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604658473743" />
+    <state width="1236" height="204" key="GridCell.Tab.0.left" timestamp="1604658473743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="262" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
-    <state width="1236" height="262" key="GridCell.Tab.0.right" timestamp="1604657487480">
+    <state width="1236" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604658473743" />
+    <state width="1236" height="204" key="GridCell.Tab.0.right" timestamp="1604658473743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="262" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
-    <state width="1236" height="262" key="GridCell.Tab.1.bottom" timestamp="1604657487480">
+    <state width="1236" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604658473743" />
+    <state width="1236" height="204" key="GridCell.Tab.1.bottom" timestamp="1604658473744">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="262" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
-    <state width="1236" height="262" key="GridCell.Tab.1.center" timestamp="1604657487480">
+    <state width="1236" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604658473744" />
+    <state width="1236" height="204" key="GridCell.Tab.1.center" timestamp="1604658473743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="262" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
-    <state width="1236" height="262" key="GridCell.Tab.1.left" timestamp="1604657487480">
+    <state width="1236" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604658473743" />
+    <state width="1236" height="204" key="GridCell.Tab.1.left" timestamp="1604658473743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="262" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
-    <state width="1236" height="262" key="GridCell.Tab.1.right" timestamp="1604657487480">
+    <state width="1236" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604658473743" />
+    <state width="1236" height="204" key="GridCell.Tab.1.right" timestamp="1604658473743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="262" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
+    <state width="1236" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604658473743" />
     <state x="471" y="210" key="VCS.EditChangelistDialog" timestamp="1604652778636">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

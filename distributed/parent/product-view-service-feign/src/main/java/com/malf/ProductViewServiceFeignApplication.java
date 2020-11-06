@@ -1,5 +1,6 @@
 package com.malf;
 
+import brave.sampler.Sampler;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.NetUtil;
@@ -35,7 +36,7 @@ public class ProductViewServiceFeignApplication {
 		int defaultPort = 8012;
 		Future<Integer> future = ThreadUtil.execAsync(() -> {
 			int p = 0;
-			System.out.println("请于5秒钟内输入端口号, 推荐 8012 超过5秒将默认使用 " + defaultPort);
+			System.out.println("请于5秒钟内输入端口号, 推荐 8012、8013或者8014，超过5秒将默认使用" + defaultPort);
 			Scanner scanner = new Scanner(System.in);
 			while (true) {
 				String strPort = scanner.nextLine();
@@ -63,8 +64,17 @@ public class ProductViewServiceFeignApplication {
 	}
 
 	@Bean
-	@LoadBalanced // RestTemplate 调用的远程地址，会走负载均衡器
+	// RestTemplate 调用的远程地址，会走负载均衡器
+	@LoadBalanced
 	RestTemplate restTemplate() {
 		return new RestTemplate();
+	}
+
+	/**
+	 * 配置 Sampler 抽样策略： ALWAYS_SAMPLE 表示持续抽样
+	 */
+	@Bean
+	public Sampler defaultSampler() {
+		return Sampler.ALWAYS_SAMPLE;
 	}
 }
