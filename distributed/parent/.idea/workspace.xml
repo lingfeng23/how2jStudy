@@ -23,32 +23,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1227461-053c-434e-acde-101a87bc21e5" name="malf" comment="">
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/src/main/java/com/malf/ProductViewServiceRibbonApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/src/main/java/com/malf/client/ProductClientRibbon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/src/main/java/com/malf/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/src/main/java/com/malf/pojo/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/src/main/java/com/malf/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/src/main/resources/templates/products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/target/classes/com/malf/ProductViewServiceRibbonApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/target/classes/com/malf/client/ProductClientRibbon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/target/classes/com/malf/controller/ProductController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/target/classes/com/malf/pojo/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/target/classes/com/malf/service/ProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-view-service-ribbon/target/classes/templates/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/ProductViewServiceFeignApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/client/ProductClientFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/pojo/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/java/com/malf/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-view-service-feign/src/main/resources/templates/products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-view-service-ribbon/src/main/java/com/malf/ProductViewServiceRibbonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-view-service-ribbon/src/main/java/com/malf/ProductViewServiceRibbonApplication.java" afterDir="false" />
     </list>
     <list id="34efca42-87e0-46d5-a0d7-cc27f01ccfed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,6 +91,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product-view-service-feign/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
@@ -98,8 +100,12 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.malf.pojo" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\malf\how2jStudy\distributed\parent\product-view-service-feign\src\main\resources" />
+      <recent name="E:\malf\how2jStudy\distributed\parent\product-view-service-feign\src\main\java" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductViewServiceRibbonApplication">
+  <component name="RunManager" selected="Spring Boot.ProductViewServiceFeignApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -138,6 +144,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductViewServiceFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="product-view-service-feign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.malf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malf.ProductViewServiceFeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductViewServiceRibbonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="product-view-service-ribbon" />
       <extension name="coverage">
@@ -155,9 +174,11 @@
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.ProductDataServiceApplication" />
       <item itemvalue="Spring Boot.ProductViewServiceRibbonApplication" />
+      <item itemvalue="Spring Boot.ProductViewServiceFeignApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ProductViewServiceFeignApplication" />
         <item itemvalue="Spring Boot.ProductViewServiceRibbonApplication" />
         <item itemvalue="Spring Boot.ProductDataServiceApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
@@ -176,7 +197,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604652336831</updated>
-      <workItem from="1604652338031" duration="4025000" />
+      <workItem from="1604652338031" duration="5296000" />
     </task>
     <task id="LOCAL-00001" summary="分布式与集群：springCloud-服务注册中心(DONE)">
       <created>1604652749120</created>
@@ -199,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604654268778</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="分布式与集群：springCloud-视图微服务-Ribbon(DONE)">
+      <created>1604656608183</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604656608183</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +247,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="分布式与集群：springCloud-服务注册中心(DONE)" />
     <MESSAGE value="分布式与集群：springCloud-注册数据微服务(DONE)" />
-    <option name="LAST_COMMIT_MESSAGE" value="分布式与集群：springCloud-注册数据微服务(DONE)" />
+    <MESSAGE value="分布式与集群：springCloud-视图微服务-Ribbon(DONE)" />
+    <option name="LAST_COMMIT_MESSAGE" value="分布式与集群：springCloud-视图微服务-Ribbon(DONE)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -231,49 +260,57 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604653031277" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604655608356">
+    <state x="238" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604657061293">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604655608356" />
-    <state width="1236" height="283" key="GridCell.Tab.0.bottom" timestamp="1604656366546">
+    <state x="238" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1604657061293" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604657640266">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="283" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604656366546" />
-    <state width="1236" height="283" key="GridCell.Tab.0.center" timestamp="1604656366545">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604657640266" />
+    <state width="1236" height="262" key="GridCell.Tab.0.bottom" timestamp="1604657487480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="283" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604656366545" />
-    <state width="1236" height="283" key="GridCell.Tab.0.left" timestamp="1604656366545">
+    <state width="1236" height="262" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
+    <state width="1236" height="262" key="GridCell.Tab.0.center" timestamp="1604657487480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="283" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604656366545" />
-    <state width="1236" height="283" key="GridCell.Tab.0.right" timestamp="1604656366546">
+    <state width="1236" height="262" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
+    <state width="1236" height="262" key="GridCell.Tab.0.left" timestamp="1604657487480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="283" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604656366546" />
-    <state width="1236" height="283" key="GridCell.Tab.1.bottom" timestamp="1604656366547">
+    <state width="1236" height="262" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
+    <state width="1236" height="262" key="GridCell.Tab.0.right" timestamp="1604657487480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="283" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604656366547" />
-    <state width="1236" height="283" key="GridCell.Tab.1.center" timestamp="1604656366546">
+    <state width="1236" height="262" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
+    <state width="1236" height="262" key="GridCell.Tab.1.bottom" timestamp="1604657487480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="283" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604656366546" />
-    <state width="1236" height="283" key="GridCell.Tab.1.left" timestamp="1604656366546">
+    <state width="1236" height="262" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
+    <state width="1236" height="262" key="GridCell.Tab.1.center" timestamp="1604657487480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="283" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604656366546" />
-    <state width="1236" height="283" key="GridCell.Tab.1.right" timestamp="1604656366546">
+    <state width="1236" height="262" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
+    <state width="1236" height="262" key="GridCell.Tab.1.left" timestamp="1604657487480">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="283" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604656366546" />
+    <state width="1236" height="262" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
+    <state width="1236" height="262" key="GridCell.Tab.1.right" timestamp="1604657487480">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1236" height="262" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604657487480" />
     <state x="471" y="210" key="VCS.EditChangelistDialog" timestamp="1604652778636">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="471" y="210" key="VCS.EditChangelistDialog/0.0.1280.680@0.0.1280.680" timestamp="1604652778636" />
-    <state x="28" y="1" key="new project wizard" timestamp="1604655425256">
+    <state x="339" y="44" width="603" height="594" key="find.popup" timestamp="1604657548687">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1604655425256" />
+    <state x="339" y="44" width="603" height="594" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1604657548687" />
+    <state x="28" y="1" key="new project wizard" timestamp="1604656824823">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1604656824823" />
   </component>
 </project>

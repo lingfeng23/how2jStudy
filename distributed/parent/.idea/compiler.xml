@@ -9,6 +9,7 @@
         <module name="eureka-server" />
         <module name="product-data-service" />
         <module name="product-view-service-ribbon" />
+        <module name="product-view-service-feign" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +18,7 @@
       <module name="eureka-server" options="-parameters" />
       <module name="parent" options="" />
       <module name="product-data-service" options="-parameters" />
+      <module name="product-view-service-feign" options="-parameters" />
       <module name="product-view-service-ribbon" options="-parameters" />
     </option>
   </component>
