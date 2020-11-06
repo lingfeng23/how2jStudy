@@ -7,7 +7,9 @@ package com.malf.pojo;
  * @since 2020/11/5
  */
 public class IndexData {
+	// 日期
 	String date;
+	// 盘点
 	float closePoint;
 
 	public String getDate() {

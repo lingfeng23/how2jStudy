@@ -9,7 +9,7 @@ package com.malf.pojo;
 public class IndexData {
 	// 日期
 	String date;
-	// 指数值
+	// 盘点
 	float closePoint;
 
 	public String getDate() {
