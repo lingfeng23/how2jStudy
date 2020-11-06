@@ -1,5 +1,7 @@
 package com.malf.service;
 
+import cn.hutool.core.date.DateUnit;
+import cn.hutool.core.date.DateUtil;
 import com.malf.client.IndexDataClient;
 import com.malf.pojo.IndexData;
 import com.malf.pojo.Profit;
@@ -95,11 +97,11 @@ public class BackTestService {
 
 	private static float getMax(int i, int day, List<IndexData> list) {
 		int start = i - 1 - day;
-		if (start < 0){
+		if (start < 0) {
 			start = 0;
 		}
 		int now = i - 1;
-		if (start < 0){
+		if (start < 0) {
 			return 0;
 		}
 		float max = 0;
@@ -127,4 +129,21 @@ public class BackTestService {
 		avg = sum / (now - start);
 		return avg;
 	}
+
+	/**
+	 * 计算当前的时间范围是多少年
+	 * @param allIndexDatas
+	 * @return
+	 */
+	public float getYear(List<IndexData> allIndexDatas) {
+		float years;
+		String sDateStart = allIndexDatas.get(0).getDate();
+		String sDateEnd = allIndexDatas.get(allIndexDatas.size() - 1).getDate();
+		Date dateStart = DateUtil.parse(sDateStart);
+		Date dateEnd = DateUtil.parse(sDateEnd);
+		long days = DateUtil.between(dateStart, dateEnd, DateUnit.DAY);
+		years = days / 365f;
+		return years;
+	}
+
 }
