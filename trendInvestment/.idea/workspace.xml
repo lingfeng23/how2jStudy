@@ -23,16 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6b59b12-e5f3-4032-a5c4-8da8f020a155" name="malf" comment="">
-      <change afterPath="$PROJECT_DIR$/index-codes-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/com/malf/config/IpConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/com/malf/config/RedisCacheConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/com/malf/pojo/Index.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/com/malf/service/IndexService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-data-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-data-service/src/main/java/com/malf/IndexDataApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-data-service/src/main/java/com/malf/config/IpConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-data-service/src/main/java/com/malf/config/RedisCacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-data-service/src/main/java/com/malf/controller/IndexDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-data-service/src/main/java/com/malf/pojo/IndexData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-data-service/src/main/java/com/malf/service/IndexDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-data-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-codes-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/index-codes-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-gather-store-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third-part-index-data-project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/third-part-index-data-project/pom.xml" afterDir="false" />
     </list>
     <list id="40a43b5b-c7de-4183-bc7d-5eccbfd3a69c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +84,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/third-part-index-data-project/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -91,10 +98,10 @@
       <recent name="E:\malf\how2jStudy\trendInvestment\third-part-index-data-project\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.IndexCodesApplication">
-    <configuration name="HutoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.malf.HutoolTest" />
-      <module name="testChild" />
+  <component name="RunManager" selected="Application.IndexCodesApplication">
+    <configuration name="IndexCodesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.malf.IndexCodesApplication" />
+      <module name="index-codes-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.malf.*" />
@@ -129,15 +136,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexCodesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="index-codes-service" />
+    <configuration name="IndexDataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="index-data-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.malf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malf.IndexCodesApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malf.IndexDataApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,26 +162,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThirdPartIndexDataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="third-part-index-data-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.malf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malf.ThirdPartIndexDataApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
+      <item itemvalue="Spring Boot.IndexDataApplication" />
+      <item itemvalue="Application.IndexCodesApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.IndexCodesApplication" />
-        <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
-        <item itemvalue="Spring Boot.ThirdPartIndexDataApplication" />
+        <item itemvalue="Application.IndexCodesApplication" />
+        <item itemvalue="Spring Boot.IndexDataApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
-        <item itemvalue="Application.HutoolTest" />
+        <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604621348608</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="趋势投资项目：指数代码为服务">
+      <created>1604622124554</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604622124554</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,50 +272,55 @@
     <MESSAGE value="趋势投资项目：采集和储存微服务(刷新)" />
     <MESSAGE value="趋势投资项目：采集和储存微服务(指数数据)" />
     <MESSAGE value="趋势投资项目：采集和储存微服务(定时器)" />
-    <option name="LAST_COMMIT_MESSAGE" value="趋势投资项目：采集和储存微服务(定时器)" />
+    <MESSAGE value="趋势投资项目：指数代码为服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="趋势投资项目：指数代码为服务" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1604621800600">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604630173136">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604621800600" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604621513240">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1604630173136" />
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1604628517197">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604621513240" />
-    <state width="1236" height="274" key="GridCell.Tab.0.bottom" timestamp="1604621439317">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604628517197" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604630483884">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="274" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604621439317" />
-    <state width="1236" height="274" key="GridCell.Tab.0.center" timestamp="1604621439317">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604630483884" />
+    <state width="1236" height="234" key="GridCell.Tab.0.bottom" timestamp="1604630380080">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="274" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604621439317" />
-    <state width="1236" height="274" key="GridCell.Tab.0.left" timestamp="1604621439317">
+    <state width="1236" height="234" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604630380080" />
+    <state width="1236" height="234" key="GridCell.Tab.0.center" timestamp="1604630380080">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="274" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604621439317" />
-    <state width="1236" height="274" key="GridCell.Tab.0.right" timestamp="1604621439317">
+    <state width="1236" height="234" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604630380080" />
+    <state width="1236" height="234" key="GridCell.Tab.0.left" timestamp="1604630380080">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="274" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604621439317" />
-    <state width="1236" height="274" key="GridCell.Tab.1.bottom" timestamp="1604621306864">
+    <state width="1236" height="234" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604630380080" />
+    <state width="1236" height="234" key="GridCell.Tab.0.right" timestamp="1604630380080">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="274" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604621306864" />
-    <state width="1236" height="274" key="GridCell.Tab.1.center" timestamp="1604621306862">
+    <state width="1236" height="234" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604630380080" />
+    <state width="1236" height="234" key="GridCell.Tab.1.bottom" timestamp="1604630380081">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="274" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604621306862" />
-    <state width="1236" height="274" key="GridCell.Tab.1.left" timestamp="1604621306861">
+    <state width="1236" height="234" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604630380081" />
+    <state width="1236" height="234" key="GridCell.Tab.1.center" timestamp="1604630380080">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="274" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604621306861" />
-    <state width="1236" height="274" key="GridCell.Tab.1.right" timestamp="1604621306863">
+    <state width="1236" height="234" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604630380080" />
+    <state width="1236" height="234" key="GridCell.Tab.1.left" timestamp="1604630380080">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="274" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604621306863" />
+    <state width="1236" height="234" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604630380080" />
+    <state width="1236" height="234" key="GridCell.Tab.1.right" timestamp="1604630380081">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1236" height="234" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604630380081" />
     <state x="398" y="42" key="RollbackChangesDialog" timestamp="1604588910454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -322,13 +333,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="471" y="210" key="VCS.EditChangelistDialog/0.0.1280.680@0.0.1280.680" timestamp="1604583844864" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1604586695756">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1604622129725">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604586695756" />
-    <state x="28" y="1" key="new project wizard" timestamp="1604621433112">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604622129725" />
+    <state x="28" y="1" key="new project wizard" timestamp="1604628115834">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1604621433112" />
+    <state x="28" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1604628115834" />
   </component>
 </project>
