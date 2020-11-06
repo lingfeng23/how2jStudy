@@ -22,23 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34efca42-87e0-46d5-a0d7-cc27f01ccfed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/malf/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/target/classes/com/malf/EurekaServerApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+    <list default="true" id="e1227461-053c-434e-acde-101a87bc21e5" name="malf" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/malf/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/ProductDataServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/pojo/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/src/main/java/com/malf/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-data-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
+    <list id="34efca42-87e0-46d5-a0d7-cc27f01ccfed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +80,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ProductDataServiceApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -107,8 +105,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductDataServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="product-data-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.malf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malf.ProductDataServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ProductDataServiceApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
@@ -120,12 +132,28 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="34efca42-87e0-46d5-a0d7-cc27f01ccfed" name="Default Changelist" comment="" />
+      <changelist id="e1227461-053c-434e-acde-101a87bc21e5" name="malf" comment="" />
       <created>1604652336831</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604652336831</updated>
-      <workItem from="1604652338031" duration="304000" />
+      <workItem from="1604652338031" duration="1912000" />
     </task>
+    <task id="LOCAL-00001" summary="分布式与集群：springCloud-服务注册中心(DONE)">
+      <created>1604652749120</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604652749120</updated>
+    </task>
+    <task id="LOCAL-00002" summary="分布式与集群：springCloud-服务注册中心(DONE)">
+      <created>1604652766117</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604652766117</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,46 +170,59 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="分布式与集群：springCloud-服务注册中心(DONE)" />
+    <option name="LAST_COMMIT_MESSAGE" value="分布式与集群：springCloud-服务注册中心(DONE)" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604652653104">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1604653031277">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604652653104" />
-    <state width="1236" height="163" key="GridCell.Tab.0.bottom" timestamp="1604652634729">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604653031277" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604654251815">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604652634729" />
-    <state width="1236" height="163" key="GridCell.Tab.0.center" timestamp="1604652634729">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604654251815" />
+    <state width="1236" height="194" key="GridCell.Tab.0.bottom" timestamp="1604654221533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604652634729" />
-    <state width="1236" height="163" key="GridCell.Tab.0.left" timestamp="1604652634729">
+    <state width="1236" height="194" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604654221533" />
+    <state width="1236" height="194" key="GridCell.Tab.0.center" timestamp="1604654221533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604652634729" />
-    <state width="1236" height="163" key="GridCell.Tab.0.right" timestamp="1604652634729">
+    <state width="1236" height="194" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604654221533" />
+    <state width="1236" height="194" key="GridCell.Tab.0.left" timestamp="1604654221533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604652634729" />
-    <state width="1236" height="163" key="GridCell.Tab.1.bottom" timestamp="1604652634729">
+    <state width="1236" height="194" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604654221533" />
+    <state width="1236" height="194" key="GridCell.Tab.0.right" timestamp="1604654221533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604652634729" />
-    <state width="1236" height="163" key="GridCell.Tab.1.center" timestamp="1604652634729">
+    <state width="1236" height="194" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604654221533" />
+    <state width="1236" height="194" key="GridCell.Tab.1.bottom" timestamp="1604654221533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604652634729" />
-    <state width="1236" height="163" key="GridCell.Tab.1.left" timestamp="1604652634729">
+    <state width="1236" height="194" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604654221533" />
+    <state width="1236" height="194" key="GridCell.Tab.1.center" timestamp="1604654221533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604652634729" />
-    <state width="1236" height="163" key="GridCell.Tab.1.right" timestamp="1604652634729">
+    <state width="1236" height="194" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604654221533" />
+    <state width="1236" height="194" key="GridCell.Tab.1.left" timestamp="1604654221533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604652634729" />
-    <state x="28" y="1" key="new project wizard" timestamp="1604652459563">
+    <state width="1236" height="194" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604654221533" />
+    <state width="1236" height="194" key="GridCell.Tab.1.right" timestamp="1604654221533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1604652459563" />
+    <state width="1236" height="194" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604654221533" />
+    <state x="471" y="210" key="VCS.EditChangelistDialog" timestamp="1604652778636">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="471" y="210" key="VCS.EditChangelistDialog/0.0.1280.680@0.0.1280.680" timestamp="1604652778636" />
+    <state x="28" y="1" key="new project wizard" timestamp="1604652851713">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1604652851713" />
   </component>
 </project>
