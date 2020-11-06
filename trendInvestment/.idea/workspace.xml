@@ -22,7 +22,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b59b12-e5f3-4032-a5c4-8da8f020a155" name="malf" comment="" />
+    <list default="true" id="a6b59b12-e5f3-4032-a5c4-8da8f020a155" name="malf" comment="">
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/java/com/malf/TrendTradingBackTestViewApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/java/com/malf/controller/ViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap-datepicker/1.8.0/bootstrap-datepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/3.3.6/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/3.3.6/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/3.3.6/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/3.3.6/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/3.3.6/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/3.3.6/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/3.3.6/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/3.3.6/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/css/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/js/axios/0.17.1/axios.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/js/bootstrap-datepicker/1.8.0/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/js/bootstrap-datepicker/1.8.0/bootstrap-datepicker.zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/js/bootstrap/3.3.6/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/js/bootstrap/3.3.6/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/js/bootstrap/3.3.6/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/js/chartjs/2.8.0/chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/js/jquery/2.0.0/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static/js/vue/2.5.16/vue.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <list id="40a43b5b-c7de-4183-bc7d-5eccbfd3a69c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +101,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/third-part-index-data-project/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/trend-trading-backtest-view/src/main/resources/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -82,6 +114,7 @@
       <recent name="com.malf.pojo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\malf\how2jStudy\trendInvestment\trend-trading-backtest-view\src\main\resources\static" />
       <recent name="E:\malf\how2jStudy\trendInvestment\third-part-index-data-project\src\main\resources" />
     </key>
   </component>
@@ -136,6 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IndexGatherStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="index-gather-store-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malf.IndexGatherStoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IndexZuulServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="index-zuul-service" />
       <extension name="coverage">
@@ -168,6 +208,7 @@
       <item itemvalue="Application.IndexCodesApplication" />
       <item itemvalue="Spring Boot.TrendTradingBackTestServiceApplication" />
       <item itemvalue="Spring Boot.IndexZuulServiceApplication" />
+      <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -277,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604631951572</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="趋势投资分析-网关回测服务(DONE)">
+      <created>1604632245148</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604632245148</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +355,8 @@
     <MESSAGE value="remove unused files" />
     <MESSAGE value="趋势投资分析-网关(DONE)" />
     <MESSAGE value="趋势投资分析-模拟回测微服务(DONE)" />
-    <option name="LAST_COMMIT_MESSAGE" value="趋势投资分析-模拟回测微服务(DONE)" />
+    <MESSAGE value="趋势投资分析-网关回测服务(DONE)" />
+    <option name="LAST_COMMIT_MESSAGE" value="趋势投资分析-网关回测服务(DONE)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -323,42 +372,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604631477084" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604631416258">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604632925046">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604631416258" />
-    <state width="1236" height="240" key="GridCell.Tab.0.bottom" timestamp="1604631901901">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604632925046" />
+    <state width="1236" height="240" key="GridCell.Tab.0.bottom" timestamp="1604632584612">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="240" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
-    <state width="1236" height="240" key="GridCell.Tab.0.center" timestamp="1604631901901">
+    <state width="1236" height="240" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604632584612" />
+    <state width="1236" height="240" key="GridCell.Tab.0.center" timestamp="1604632584612">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="240" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
-    <state width="1236" height="240" key="GridCell.Tab.0.left" timestamp="1604631901901">
+    <state width="1236" height="240" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604632584612" />
+    <state width="1236" height="240" key="GridCell.Tab.0.left" timestamp="1604632584612">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="240" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
-    <state width="1236" height="240" key="GridCell.Tab.0.right" timestamp="1604631901901">
+    <state width="1236" height="240" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604632584612" />
+    <state width="1236" height="240" key="GridCell.Tab.0.right" timestamp="1604632584612">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="240" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
-    <state width="1236" height="240" key="GridCell.Tab.1.bottom" timestamp="1604631901902">
+    <state width="1236" height="240" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604632584612" />
+    <state width="1236" height="240" key="GridCell.Tab.1.bottom" timestamp="1604632232623">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="240" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604631901902" />
-    <state width="1236" height="240" key="GridCell.Tab.1.center" timestamp="1604631901902">
+    <state width="1236" height="240" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604632232623" />
+    <state width="1236" height="240" key="GridCell.Tab.1.center" timestamp="1604632232623">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="240" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604631901902" />
-    <state width="1236" height="240" key="GridCell.Tab.1.left" timestamp="1604631901901">
+    <state width="1236" height="240" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604632232623" />
+    <state width="1236" height="240" key="GridCell.Tab.1.left" timestamp="1604632232623">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="240" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604631901901" />
-    <state width="1236" height="240" key="GridCell.Tab.1.right" timestamp="1604631901902">
+    <state width="1236" height="240" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604632232623" />
+    <state width="1236" height="240" key="GridCell.Tab.1.right" timestamp="1604632232623">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="240" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604631901902" />
+    <state width="1236" height="240" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604632232623" />
     <state x="398" y="42" key="RollbackChangesDialog" timestamp="1604588910454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -375,9 +424,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604631957896" />
-    <state x="28" y="1" key="new project wizard" timestamp="1604631236563">
+    <state x="28" y="1" key="new project wizard" timestamp="1604632578469">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1604631236563" />
+    <state x="28" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1604632578469" />
   </component>
 </project>
