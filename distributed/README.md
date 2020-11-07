@@ -59,7 +59,7 @@
     - 在前面"注册数据微服务"里，注册了8001和8002两个微服务，Ribbon 会从注册中心获知这个信息，然后由 Ribbon 这个客户端自己决定是调用哪个，这个
     就叫做客户端负载均衡。
 - Feign 是什么呢？ 
-    - Feign 是对 Ribbon的封装，调用起来更简单。
+    - Feign 是对 Ribbon 的封装，调用起来更简单。
 
 #### Ribbon 调用过程解读
 - 首先数据微服务和视图微服务都被 eureka 管理起来了。
@@ -129,6 +129,12 @@ RabbitMQ
     ```
     java -jar zipkin-server-2.10.1-exec.jar --zipkin.collector.rabbitmq.addresses=localhost
     ```
-  
-### 断路器 HYSTRIX
+ 
+### 断路器 HYSTRIX DONE
 所谓的断路器，就是当被访问的微服务无法使用的时候，当前服务能够感知这个现象，并且提供一个备用的方案出来。
+
+### 断路器监控 DONE
+
+### 断路器聚合监控 DONE
+
+### 网关 DONE

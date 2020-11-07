@@ -35,9 +35,9 @@
 
 ## 工具和中间件(middleware)
 
-## 分布式和集群(distributed) 
+## 分布式和集群(distributed) DONE
 
-#### SpringCloud
+#### SpringCloud DONE
 
 ## 数据库(database) DONE
 
