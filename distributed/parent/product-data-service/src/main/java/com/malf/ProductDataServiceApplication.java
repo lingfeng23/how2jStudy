@@ -26,6 +26,12 @@ import java.util.concurrent.TimeoutException;
 @EnableEurekaClient
 public class ProductDataServiceApplication {
 	public static void main(String[] args) {
+		// 判断 RabbitMQ 是否启动
+		int rabbitMQPort = 5672;
+		if (NetUtil.isUsableLocalPort(rabbitMQPort)) {
+			System.err.printf("未在端口%d 发现 RabbitMQ 服务，请检查 RabbitMQ 是否启动", rabbitMQPort);
+			System.exit(1);
+		}
 		int port = 0;
 		int defaultPort = 8001;
 		Future<Integer> future = ThreadUtil.execAsync(() -> {

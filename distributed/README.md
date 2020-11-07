@@ -93,7 +93,7 @@ Feign 是对 Ribbon的封装，使用注解的方式，调用起来更简单，�
 - 这样只要修改 git 上的信息，那么同一个集群里的所有微服务都立即获取相应信息了，这样就大大节约了开发，上线和重新部署的时间了。
 步骤
 - git 上准备好配置文件
-    - https://github.com/lingfeng23/how2jStudy/blob/master/distributed/parent/product-view-service-feign-dev.properties
+    - https://github.com/lingfeng23/how2jStudy/blob/master/respo/product-view-service-feign-dev.properties
     ```
     version = malf springcloud version 1.0
     ```
@@ -112,10 +112,20 @@ spring:
           # uri 表示 git 地址
           uri: https://github.com/lingfeng23/how2jStudy
           # searchPaths 表示目录
-          searchPaths: /tree/master/distributed/parent
+          searchPaths: respo
 ```
 - 启动项目访问 http://localhost:8030/version/dev
 - 显示如下内容就表示配置服务准备好了
     - {"name":"version","profiles":["dev"],"label":null,"version":"d1ab60fab7daa717eca40119d8a8014a93950214","state":null,"propertySources":[]}
 
-### 配置客户端
+### 配置客户端 DONE
+
+### 消息总线 Bus
+RabbitMQ
+- SpringCloud 通过 RabbitMQ 来进行消息广播，以达到有配置信息发生改变的时候，广播给多个微服务的效果。
+- 对服务链路追踪的影响
+    - 因为视图服务进行了改造，支持了 rabbitMQ, 那么在默认情况下，它的信息就不会进入 Zipkin了。 在Zipkin 里看不到视图服务的资料了。
+    - 为了解决这个问题，在启动 Zipkin 的时候带一个参数就好了：--zipkin.collector.rabbitmq.addresses=localhost
+    ```
+    java -jar zipkin-server-2.10.1-exec.jar --zipkin.collector.rabbitmq.addresses=localhost
+    ```
