@@ -23,15 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1227461-053c-434e-acde-101a87bc21e5" name="malf" comment="">
-      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/malf/ConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-view-service-feign-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../respo/product-view-service-feign-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../trendInvestment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../trendInvestment/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="34efca42-87e0-46d5-a0d7-cc27f01ccfed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,13 +99,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,7 +207,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604652336831</updated>
-      <workItem from="1604652338031" duration="9395000" />
+      <workItem from="1604652338031" duration="9604000" />
+      <workItem from="1604712975821" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="分布式与集群：springCloud-服务注册中心(DONE)">
       <created>1604652749120</created>
@@ -254,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604658800855</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="分布式与集群：springCloud-配置服务器(DONE)">
+      <created>1604666421127</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604666421127</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +275,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="分布式与集群：springCloud-服务注册中心(DONE)" />
@@ -277,7 +283,8 @@
     <MESSAGE value="分布式与集群：springCloud-视图微服务-Ribbon(DONE)" />
     <MESSAGE value="分布式与集群：springCloud-视图微服务-Feign(DONE)" />
     <MESSAGE value="分布式与集群：springCloud-服务链路追踪(DONE)" />
-    <option name="LAST_COMMIT_MESSAGE" value="分布式与集群：springCloud-服务链路追踪(DONE)" />
+    <MESSAGE value="分布式与集群：springCloud-配置服务器(DONE)" />
+    <option name="LAST_COMMIT_MESSAGE" value="分布式与集群：springCloud-配置服务器(DONE)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -297,42 +304,51 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="238" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1604657061293" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1604666241639">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="112" y="113" width="1314" height="600" key="DiffContextDialog" timestamp="1604713585840">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604666241639" />
-    <state width="1236" height="185" key="GridCell.Tab.0.bottom" timestamp="1604666231115">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1604666450478" />
+    <state x="112" y="113" width="1314" height="600" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1604713585840" />
+    <state width="1492" height="264" key="GridCell.Tab.0.bottom" timestamp="1604713546272">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="185" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604666231115" />
-    <state width="1236" height="185" key="GridCell.Tab.0.center" timestamp="1604666231115">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1236" height="236" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604666450467" />
+    <state width="1492" height="264" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604713546272" />
+    <state width="1492" height="264" key="GridCell.Tab.0.center" timestamp="1604713546272">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="185" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604666231115" />
-    <state width="1236" height="185" key="GridCell.Tab.0.left" timestamp="1604666231115">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1236" height="236" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604666450467" />
+    <state width="1492" height="264" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604713546272" />
+    <state width="1492" height="264" key="GridCell.Tab.0.left" timestamp="1604713546272">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="185" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604666231115" />
-    <state width="1236" height="185" key="GridCell.Tab.0.right" timestamp="1604666231115">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1236" height="236" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604666450467" />
+    <state width="1492" height="264" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604713546272" />
+    <state width="1492" height="264" key="GridCell.Tab.0.right" timestamp="1604713546272">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="185" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604666231115" />
-    <state width="1236" height="185" key="GridCell.Tab.1.bottom" timestamp="1604666231115">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1236" height="236" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604666450467" />
+    <state width="1492" height="264" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604713546272" />
+    <state width="1492" height="264" key="GridCell.Tab.1.bottom" timestamp="1604713546272">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="185" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604666231115" />
-    <state width="1236" height="185" key="GridCell.Tab.1.center" timestamp="1604666231115">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1236" height="236" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604666450467" />
+    <state width="1492" height="264" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604713546272" />
+    <state width="1492" height="264" key="GridCell.Tab.1.center" timestamp="1604713546272">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="185" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604666231115" />
-    <state width="1236" height="185" key="GridCell.Tab.1.left" timestamp="1604666231115">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1236" height="236" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604666450467" />
+    <state width="1492" height="264" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604713546272" />
+    <state width="1492" height="264" key="GridCell.Tab.1.left" timestamp="1604713546272">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="185" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604666231115" />
-    <state width="1236" height="185" key="GridCell.Tab.1.right" timestamp="1604666231115">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1236" height="236" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604666450467" />
+    <state width="1492" height="264" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604713546272" />
+    <state width="1492" height="264" key="GridCell.Tab.1.right" timestamp="1604713546272">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="185" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604666231115" />
+    <state width="1236" height="236" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604666450467" />
+    <state width="1492" height="264" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604713546272" />
     <state x="279" y="42" key="RollbackChangesDialog" timestamp="1604666138009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

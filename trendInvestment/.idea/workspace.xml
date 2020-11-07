@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b59b12-e5f3-4032-a5c4-8da8f020a155" name="malf" comment="" />
+    <list default="true" id="a6b59b12-e5f3-4032-a5c4-8da8f020a155" name="malf" comment="">
+      <change beforePath="$PROJECT_DIR$/../distributed/parent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../distributed/parent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list id="40a43b5b-c7de-4183-bc7d-5eccbfd3a69c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +47,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.4\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -98,17 +101,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,11 +165,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.IndexDataApplication" />
       <item itemvalue="Application.IndexCodesApplication" />
+      <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
+      <item itemvalue="Spring Boot.IndexDataApplication" />
       <item itemvalue="Spring Boot.TrendTradingBackTestServiceApplication" />
       <item itemvalue="Spring Boot.IndexZuulServiceApplication" />
-      <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
       <item itemvalue="Spring Boot.TrendTradingBackTestViewApplication" />
     </list>
     <recent_temporary>
@@ -191,6 +183,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -203,6 +198,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604583749330</updated>
       <workItem from="1604583750499" duration="3306000" />
+      <workItem from="1604666464879" duration="1569000" />
+      <workItem from="1604712682924" duration="290000" />
     </task>
     <task id="LOCAL-00001" summary="趋势投资父项目初始化">
       <created>1604584219603</created>
@@ -381,6 +378,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="趋势投资父项目初始化" />
@@ -462,10 +460,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="398" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1604588910454" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1604586990115">
+    <state x="121" y="0" key="SettingsEditor" timestamp="1604670698663">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604586990115" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604670698663" />
     <state x="471" y="210" key="VCS.EditChangelistDialog" timestamp="1604583844864">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -474,10 +472,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604650187688" />
-    <state x="339" y="43" width="603" height="594" key="find.popup" timestamp="1604648970199">
+    <state x="339" y="43" width="603" height="594" key="find.popup" timestamp="1604670688224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="339" y="43" width="603" height="594" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1604648970199" />
+    <state x="339" y="43" width="603" height="594" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1604670688224" />
     <state x="28" y="1" key="new project wizard" timestamp="1604632578469">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

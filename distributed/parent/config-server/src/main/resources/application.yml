@@ -10,7 +10,7 @@ spring:
           # uri 表示 git 地址
           uri: https://github.com/lingfeng23/how2jStudy
           # searchPaths 表示目录
-          searchPaths: /tree/master/distributed/parent
+          searchPaths: respo
 eureka:
   client:
     serviceUrl:
