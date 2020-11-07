@@ -5,7 +5,6 @@ import org.junit.Test;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-import java.awt.event.ItemEvent;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -17,7 +16,7 @@ import java.util.Map;
  * @project how2jStudy
  * @since 2020/9/16
  */
-public class TestRedis {
+public class RedisTest {
 	JedisPool pool;
 	Jedis jedis;
 

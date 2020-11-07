@@ -103,9 +103,9 @@ public class QRCodeUtil {
 		File qrFile = new File(filePath);
 
 		// 二维码内容
-		String encodedata = "http://how2j.cn";
+		String encodeData = "http://how2j.cn";
 		try {
-			QRCodeUtil.qrCodeEncode(encodedata, qrFile);
+			QRCodeUtil.qrCodeEncode(encodeData, qrFile);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -35,6 +35,36 @@
 
 ## 工具和中间件(middleware)
 
+### Maven
+
+### 调试 略
+
+### Git 略
+
+### Intellij IDEA DONE
+
+### Redis DONE
+
+### Nginx
+
+### 部署到 Linux
+
+### WebSocket
+
+### Qrcode DONE
+
+### 搜索引擎技术
+
+### Quartz DONE
+
+### Shiro
+
+### 虚拟机安装 Linux
+
+### docker
+
+### 消息中间件
+
 ## 分布式和集群(distributed) DONE
 
 #### SpringCloud DONE
