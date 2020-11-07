@@ -11,6 +11,9 @@ spring:
     servlet:
       content-type: text/html
     mode: HTML5
+# 开启断路器
+feign.hystrix.enabled: true
+
 # 新增路径访问允许
 management:
   endpoints:

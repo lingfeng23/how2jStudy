@@ -12,7 +12,7 @@ import java.util.List;
  * @project parent
  * @since 2020/11/6
  */
-@FeignClient(value = "PRODUCT-DATA-SERVICE")
+@FeignClient(value = "PRODUCT-DATA-SERVICE", fallback = ProductClientFeignHystrix.class)
 public interface ProductClientFeign {
 	@GetMapping("/products")
 	public List<Product> listProdcuts();

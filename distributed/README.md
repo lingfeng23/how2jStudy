@@ -120,7 +120,7 @@ spring:
 
 ### 配置客户端 DONE
 
-### 消息总线 Bus
+### 消息总线 Bus DONE
 RabbitMQ
 - SpringCloud 通过 RabbitMQ 来进行消息广播，以达到有配置信息发生改变的时候，广播给多个微服务的效果。
 - 对服务链路追踪的影响
@@ -129,3 +129,6 @@ RabbitMQ
     ```
     java -jar zipkin-server-2.10.1-exec.jar --zipkin.collector.rabbitmq.addresses=localhost
     ```
+  
+### 断路器 HYSTRIX
+所谓的断路器，就是当被访问的微服务无法使用的时候，当前服务能够感知这个现象，并且提供一个备用的方案出来。
