@@ -99,7 +99,10 @@ public class ShiroTest {
 
 	private static Subject getSubject(User user) {
 		// 加载配置文件，并获取工厂
-		Factory<SecurityManager> factory = new IniSecurityManagerFactory("E:\\malf\\how2jStudy\\middleware\\src\\shiro\\shiro.ini");
+		Factory<SecurityManager> factory = new IniSecurityManagerFactory(
+				"E:\\malf\\how2jStudy\\middleware\\src\\shiro\\shiro.ini");
+		//Factory<SecurityManager> factory = new IniSecurityManagerFactory(
+		//		"E:\\malf\\how2jStudy\\middleware\\src\\shiro\\shiroRealm.ini");
 		// 获取安全管理者实例
 		SecurityManager manager = factory.getInstance();
 		// 将安全管理者放入全局对象
