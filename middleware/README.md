@@ -101,7 +101,59 @@ Cron 表达式举例
 |0 0 12 1/5 * ?|每月的第一天开始，每个第5天12:00触发|
 |0 11 11 11 11 ?|每年11月11号11:11触发|
 
-#### Shiro
+#### Shiro(shiro)
+
+##### Shiro 入门
+shiro.ini 配置文件方式鉴权
+
+##### Shiro 数据库支持
+RBAC 是当下权限系统的设计基础，同时有两种解释：
+- 一： Role-Based Access Control，基于角色的访问控制
+    - 即，你要能够删除产品，那么当前用户就必须拥有产品经理这个角色
+- 二：Resource-Based Access Control，基于资源的访问控制
+    - 即，你要能够删除产品，那么当前用户就必须拥有删除产品这样的权限
+
+基于 RBAC 概念， 就会存在3 张基础表： 用户，角色，权限， 以及 2 张中间表来建立 用户与角色的多对多关系，角色与权限的多对多关系。 用户与权限之间也是多对多关系，但是是通过 角色间接建立的。
+
+创建数据库脚本
+```
+drop table if exists user;
+drop table if exists role;
+drop table if exists permission;
+drop table if exists user_role;
+drop table if exists role_permission;
+ 
+create table user (
+  id bigint auto_increment,
+  name varchar(100),
+  password varchar(100),
+  constraint pk_users primary key(id)
+) charset=utf8 ENGINE=InnoDB;
+ 
+create table role (
+  id bigint auto_increment,
+  name varchar(100),
+  constraint pk_roles primary key(id)
+) charset=utf8 ENGINE=InnoDB;
+ 
+create table permission (
+  id bigint auto_increment,
+  name varchar(100),
+  constraint pk_permissions primary key(id)
+) charset=utf8 ENGINE=InnoDB;
+ 
+create table user_role (
+  uid bigint,
+  rid bigint,
+  constraint pk_users_roles primary key(uid, rid)
+) charset=utf8 ENGINE=InnoDB;
+ 
+create table role_permission (
+  rid bigint,
+  pid bigint,
+  constraint pk_roles_permissions primary key(rid, pid)
+) charset=utf8 ENGINE=InnoDB;
+```
 
 #### 虚拟机安装 Linux
 
