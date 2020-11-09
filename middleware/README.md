@@ -103,10 +103,10 @@ Cron 表达式举例
 
 #### Shiro(shiro)
 
-##### Shiro 入门
+##### Shiro 入门 DONE
 shiro.ini 配置文件方式鉴权
 
-##### Shiro 数据库支持
+##### Shiro 数据库支持 DONE
 RBAC 是当下权限系统的设计基础，同时有两种解释：
 - 一： Role-Based Access Control，基于角色的访问控制
     - 即，你要能够删除产品，那么当前用户就必须拥有产品经理这个角色
@@ -154,7 +154,13 @@ create table role_permission (
   constraint pk_roles_permissions primary key(rid, pid)
 ) charset=utf8 ENGINE=InnoDB;
 ```
-##### Shiro 加密
+##### Shiro 加密 DONE
+
+##### Shiro Web支持(Servlet) 略
+
+##### Shiro SSM && 权限维护一套 && 基于URL配置权限 略
+
+##### Shiro SpringBoot(重点项目) DOING
 
 #### 虚拟机安装 Linux
 
