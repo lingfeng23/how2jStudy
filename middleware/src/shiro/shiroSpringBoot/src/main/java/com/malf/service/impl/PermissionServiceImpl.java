@@ -31,6 +31,7 @@ public class PermissionServiceImpl implements PermissionService {
 	@Autowired
 	RolePermissionMapper rolePermissionMapper;
 
+	@Override
 	public Set<String> listPermissions(String userName) {
 		Set<String> result = new HashSet<>();
 		List<Role> roles = roleService.listRoles(userName);
@@ -48,28 +49,36 @@ public class PermissionServiceImpl implements PermissionService {
 		return result;
 	}
 
+	@Override
 	public List<Permission> list() {
 		PermissionExample example = new PermissionExample();
 		example.setOrderByClause("id desc");
 		return permissionMapper.selectByExample(example);
+
 	}
 
-	public void add(Permission permission) {
-		permissionMapper.insert(permission);
+	@Override
+	public void add(Permission u) {
+		permissionMapper.insert(u);
 	}
 
+	@Override
 	public void delete(Long id) {
 		permissionMapper.deleteByPrimaryKey(id);
 	}
 
+	@Override
 	public Permission get(Long id) {
 		return permissionMapper.selectByPrimaryKey(id);
 	}
 
-	public void update(Permission permission) {
-		permissionMapper.updateByPrimaryKeySelective(permission);
+	@Override
+	public void update(Permission u) {
+		permissionMapper.updateByPrimaryKeySelective(u);
 	}
 
+
+	@Override
 	public List<Permission> list(Role role) {
 		List<Permission> result = new ArrayList<>();
 		RolePermissionExample example = new RolePermissionExample();
@@ -77,6 +86,34 @@ public class PermissionServiceImpl implements PermissionService {
 		List<RolePermission> rolePermissions = rolePermissionMapper.selectByExample(example);
 		for (RolePermission rolePermission : rolePermissions) {
 			result.add(permissionMapper.selectByPrimaryKey(rolePermission.getPid()));
+		}
+		return result;
+	}
+
+	@Override
+	public boolean needInterceptor(String requestURI) {
+		List<Permission> permissions = list();
+		for (Permission permission : permissions) {
+			if (permission.getUrl().equals(requestURI))
+				return true;
+		}
+		return false;
+	}
+
+	@Override
+	public Set<String> listPermissionURLs(String userName) {
+		Set<String> result = new HashSet<>();
+		List<Role> roles = roleService.listRoles(userName);
+		List<RolePermission> rolePermissions = new ArrayList<>();
+		for (Role role : roles) {
+			RolePermissionExample example = new RolePermissionExample();
+			example.createCriteria().andRidEqualTo(role.getId());
+			List<RolePermission> rps = rolePermissionMapper.selectByExample(example);
+			rolePermissions.addAll(rps);
+		}
+		for (RolePermission rolePermission : rolePermissions) {
+			Permission p = permissionMapper.selectByPrimaryKey(rolePermission.getPid());
+			result.add(p.getUrl());
 		}
 		return result;
 	}

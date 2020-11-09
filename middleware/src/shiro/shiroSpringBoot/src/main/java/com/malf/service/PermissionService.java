@@ -26,4 +26,9 @@ public interface PermissionService {
 	public void update(Permission permission);
 
 	public List<Permission> list(Role role);
+
+	public boolean needInterceptor(String requestURI);
+
+	public Set<String> listPermissionURLs(String userName);
+
 }
