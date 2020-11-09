@@ -1,5 +1,8 @@
 package shiro;
 
+import org.apache.shiro.crypto.SecureRandomNumberGenerator;
+import org.apache.shiro.crypto.hash.SimpleHash;
+
 import java.sql.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -23,6 +26,43 @@ public class UserDao {
 		return DriverManager.getConnection(
 				"jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8",
 				"root", "password");
+	}
+
+	public boolean createUser(String name, String password) {
+		String sql = "insert into user values(null, ?, ?, ?)";
+		String salt = new SecureRandomNumberGenerator().nextBytes().toString();
+		String encodedPassword = new SimpleHash("md5", password, salt, 2).toString();
+		try (Connection connection = getConnection();
+			 PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+			preparedStatement.setString(1, name);
+			preparedStatement.setString(2, encodedPassword);
+			preparedStatement.setString(3, salt);
+			return preparedStatement.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+	public User getUser(String userName) {
+		User user = null;
+		String sql = "select * from user where name = ?";
+		try (Connection connection = getConnection();
+			 PreparedStatement preparedStatement = connection.prepareStatement(sql);) {
+			preparedStatement.setString(1, userName);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if (resultSet.next()) {
+				user = new User();
+				user.setId(resultSet.getInt("id"));
+				user.setName(resultSet.getString("name"));
+				user.setPassword(resultSet.getString("password"));
+				user.setSalt(resultSet.getString("salt"));
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return user;
 	}
 
 	public String getPassword(String userName) {

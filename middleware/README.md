@@ -154,6 +154,7 @@ create table role_permission (
   constraint pk_roles_permissions primary key(rid, pid)
 ) charset=utf8 ENGINE=InnoDB;
 ```
+##### Shiro 加密
 
 #### 虚拟机安装 Linux
 

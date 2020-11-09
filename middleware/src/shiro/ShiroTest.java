@@ -84,6 +84,19 @@ public class ShiroTest {
 				}
 			}
 		}
+
+		// Shiro 加密
+		UserDao userDao = new UserDao();
+//		userDao.createUser("tom", "123456");
+//		User user = new User();
+//		user.setName("tom");
+//		user.setPassword("123456");
+		User user = userDao.getUser("tom");
+		if(login(user)) {
+			System.out.println("登陆成功");
+		} else {
+			System.out.println("登录失败");
+		}
 	}
 
 
