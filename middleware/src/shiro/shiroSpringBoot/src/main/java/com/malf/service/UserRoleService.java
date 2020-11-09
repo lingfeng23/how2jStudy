@@ -1,6 +1,7 @@
 package com.malf.service;
 
 import com.malf.pojo.User;
+import org.springframework.stereotype.Service;
 
 /**
  * @author malf
@@ -8,6 +9,7 @@ import com.malf.pojo.User;
  * @project shiroSpringBoot
  * @since 2020/11/9
  */
+@Service
 public interface UserRoleService {
 	public void setRoles(User user, long[] roleIds);
 

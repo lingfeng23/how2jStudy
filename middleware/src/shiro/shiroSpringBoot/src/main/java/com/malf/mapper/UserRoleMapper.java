@@ -2,8 +2,11 @@ package com.malf.mapper;
 
 import com.malf.pojo.UserRole;
 import com.malf.pojo.UserRoleExample;
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.List;
 
+@Mapper
 public interface UserRoleMapper {
     int deleteByPrimaryKey(Long id);
 
