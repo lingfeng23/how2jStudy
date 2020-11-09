@@ -34,7 +34,7 @@ public class ShiroConfiguration {
 	 * ShiroFilterFactoryBean 处理拦截资源文件问题。
 	 * 注意：单独一个ShiroFilterFactoryBean配置是或报错的，因为在
 	 * 初始化ShiroFilterFactoryBean的时候需要注入：SecurityManager
-	 *
+	 * <p>
 	 * Filter Chain定义说明
 	 * 1、一个URL可以配置多个Filter，使用逗号分隔
 	 * 2、当设置多个过滤器时，全部验证通过，才视为通过
@@ -102,8 +102,10 @@ public class ShiroConfiguration {
 	@Bean
 	public HashedCredentialsMatcher hashedCredentialsMatcher() {
 		HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
-		hashedCredentialsMatcher.setHashAlgorithmName("md5"); //散列算法:这里使用MD5算法;
-		hashedCredentialsMatcher.setHashIterations(2); //散列的次数，比如散列两次，相当于 md5(md5(""));
+		// 散列算法:这里使用MD5算法;
+		hashedCredentialsMatcher.setHashAlgorithmName("md5");
+		// 散列的次数，比如散列两次，相当于 md5(md5(""));
+		hashedCredentialsMatcher.setHashIterations(2);
 		return hashedCredentialsMatcher;
 	}
 
@@ -120,4 +122,5 @@ public class ShiroConfiguration {
 		authorizationAttributeSourceAdvisor.setSecurityManager(securityManager);
 		return authorizationAttributeSourceAdvisor;
 	}
+
 }
