@@ -6,6 +6,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 import com.malf.service.PermissionService;
+import com.malf.util.SpringContextUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.UnauthorizedException;
 import org.apache.shiro.subject.Subject;
@@ -21,6 +22,9 @@ public class URLPathMatchingFilter extends PathMatchingFilter {
 	@Override
 	protected boolean onPreHandle(ServletRequest request, ServletResponse response, Object mappedValue)
 			throws Exception {
+		if (null == permissionService) {
+			permissionService = SpringContextUtils.getContext().getBean(PermissionService.class);
+		}
 		String requestURI = getPathWithinApplication(request);
 		System.out.println("requestURI:" + requestURI);
 		Subject subject = SecurityUtils.getSubject();
@@ -31,6 +35,7 @@ public class URLPathMatchingFilter extends PathMatchingFilter {
 		}
 
 		// 看看这个路径权限里有没有维护，如果没有维护，一律放行(也可以改为一律不放行)
+		System.out.println("permissionService:" + permissionService);
 		boolean needInterceptor = permissionService.needInterceptor(requestURI);
 		if (!needInterceptor) {
 			return true;
@@ -45,19 +50,14 @@ public class URLPathMatchingFilter extends PathMatchingFilter {
 					break;
 				}
 			}
-
-			if (hasPermission)
+			if (hasPermission) {
 				return true;
-			else {
+			} else {
 				UnauthorizedException ex = new UnauthorizedException("当前用户没有访问路径 " + requestURI + " 的权限");
-
 				subject.getSession().setAttribute("ex", ex);
-
 				WebUtils.issueRedirect(request, response, "/unauthorized");
 				return false;
 			}
-
 		}
-
 	}
 }
