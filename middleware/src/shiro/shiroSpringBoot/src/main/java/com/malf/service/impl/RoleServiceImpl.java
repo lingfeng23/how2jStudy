@@ -6,6 +6,7 @@ import com.malf.pojo.*;
 import com.malf.service.RoleService;
 import com.malf.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -18,6 +19,7 @@ import java.util.Set;
  * @project shiroSpringBoot
  * @since 2020/11/9
  */
+@Service
 public class RoleServiceImpl implements RoleService {
 	@Autowired
 	RoleMapper roleMapper;

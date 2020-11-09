@@ -1,7 +1,6 @@
 package com.malf.service;
 
 import com.malf.pojo.Role;
-import com.malf.pojo.User;
 
 /**
  * @author malf
