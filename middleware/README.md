@@ -21,6 +21,29 @@
 
 #### Nginx
 
+##### Nginx
+- Nginx 命令(在 Nginx 的目录下执行)
+    - start nginx 启动
+    - nginx -s stop 关闭
+    - nginx -s reload 重启
+
+- nginx.conf 配置文件
+    - 端口号
+    listen 80;
+    - 页面存放位置：表示页面都存放在nginx的html目录下
+    root html;
+    - 欢迎页面：默认会访问index.html或者index.htm文件
+    index  index.html index.htm;
+- 反向代理概念
+    - 先说正向代理，比如要访问 youtube,但是不能直接访问，只能先找个翻墙软件，通过翻墙软件才能访问 youtube. 翻墙软件就叫做正向代理。
+    - 所谓的反向代理，指的是用户要访问 youtube,但是 youtube 悄悄地把这个请求交给 bilibili 来做，那么 bilibili 就是反向代理了。
+    - 这里 Nginx 的反向代理指的是访问 nginx,但是 nginx 把请求交给 tomcat 来做。
+- Nginx 反向代理的好处/意义？
+    - nginx 在处理静态文件的吞吐量上面比 tomcat 好很多，通常他们俩配合，不会把所有的请求都如本例所示的交给 tomcat, 而是把静态请求交给 nginx，
+    动态请求，如 jsp, servlet, ssm, struts 等请求交给 tomcat，从而达到动静分离的效果。
+- 动静分离
+    - 动静分离就是指图片，css, js 之类的都交给 nginx 来处理，nginx 处理不了的，比如 jsp 就交给 tomcat 来处理
+
 #### 部署到 Linux
 
 #### WebSocket
