@@ -18,9 +18,12 @@ import java.util.Date;
 @Controller
 public class HelloController {
 	@RequestMapping("/hello")
-	public String hello(Model model) {
+	public String hello(Model model) throws Exception {
 		model.addAttribute("now",
 				DateFormat.getDateInstance().format(new Date()));
+		if (true) {
+			throw new Exception("Exception");
+		}
 		return "hello";
 	}
 
