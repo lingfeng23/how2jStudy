@@ -1,5 +1,5 @@
 ###《工具和中间件》
-#### Maven
+#### Maven(TODO)
 
 #### 调试 略
 
@@ -19,9 +19,8 @@
     
 #### Redis(redis) DONE
 
-#### Nginx
+#### Nginx DONE
 
-##### Nginx
 - Nginx 命令(在 Nginx 的目录下执行)
     - start nginx 启动
     - nginx -s stop 关闭
@@ -44,17 +43,17 @@
 - 动静分离
     - 动静分离就是指图片，css, js 之类的都交给 nginx 来处理，nginx 处理不了的，比如 jsp 就交给 tomcat 来处理
 
-#### 部署到 Linux
+#### 部署到 Linux(TODO)
 
-#### WebSocket
+#### WebSocket(TODO)
 
 #### QRCode(qrcode) DONE
 * 使用 Java 生成以及解析二维码
 * 使用 JavaScript 方式创建二维码
 
-#### 搜索引擎技术(searchEngine)
+#### 搜索引擎技术(searchEngine)(TODO)
 
-##### Lucene DONE
+##### Lucene(lucene) DONE
 安装依赖 jar 包
 - commons-io-1.3.2
 - IKAnalyzer6.5.0 // 分词器
@@ -91,6 +90,39 @@ Lucene 分页通常来讲有两种方式：
 - 第一种是把100条数据查出来，然后取最后10条。 优点是快，缺点是对内存消耗大。
 - 第二种是把第90条查询出来，然后基于这一条，通过searchAfter方法查询10条数据。 优点是内存消耗小，缺点是比第一种更慢
 
+##### Solr(TODO)
+
+##### ElasticSearch(elasticSearch)(DOING)
+
+###### ElasticSearch 启动服务器
+- 下载 -> 解压 -> 管理员身份运行 elasticsearch.bat ->访问 http://127.0.0.1:9200/
+- 页面显示内容为
+```
+{
+  "name" : "3_Qt3Fi",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "K7Fz_QJkROCryD8m8FhH_w",
+  "version" : {
+    "number" : "6.2.2",
+    "build_hash" : "10b1edd",
+    "build_date" : "2018-02-16T19:01:30.685723Z",
+    "build_snapshot" : false,
+    "lucene_version" : "7.2.1",
+    "minimum_wire_compatibility_version" : "5.6.0",
+    "minimum_index_compatibility_version" : "5.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}
+```
+###### ElasticSearch 工具 Kibana 
+Kibana 是在ElasticSearch 有了相当多的数据之后，进行分析这些数据用的工具。
+- 下载 -> 解压 -> 管理员身份运行 kibana.bat ->访问 http://localhost:5601/app/kibana#/dev_tools/console?_g=()
+打开当前的开发工具 Dev Tools 界面
+- 运行测试：控制台输入 `GET /_cat/health?v`，后点击绿色箭头进行
+
+###### ElasticSearch Kibana-索引管理
+索引相当于就是一个数据库服务器上的某个数据库，所以索引也可以看成是 ElasticSearch 里的某个数据库
+
 
 #### Quartz(quartz) DONE
 
@@ -124,7 +156,7 @@ Cron 表达式举例
 |0 0 12 1/5 * ?|每月的第一天开始，每个第5天12:00触发|
 |0 11 11 11 11 ?|每年11月11号11:11触发|
 
-#### Shiro(shiro)
+#### Shiro(shiro)(TODO)
 
 ##### Shiro 入门 DONE
 shiro.ini 配置文件方式鉴权
@@ -185,11 +217,11 @@ create table role_permission (
 
 ##### Shiro SpringBoot(重点项目) DOING
 
-#### 虚拟机安装 Linux
+#### 虚拟机安装 Linux(TODO)
 
-#### docker
+#### docker(TODO)
 
-#### 消息中间件
+#### 消息中间件(TODO)
 
 #####
 

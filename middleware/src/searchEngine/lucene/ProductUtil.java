@@ -1,4 +1,4 @@
-package searchEngine;
+package searchEngine.lucene;
 
 import org.apache.commons.io.FileUtils;
 
@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class ProductUtil {
 	public static void main(String[] args) throws IOException {
-		String fileName = "E:\\malf\\how2jStudy\\middleware\\src\\searchEngine\\140k_products.txt";
+		String fileName = "E:/malf/how2jStudy/middleware/src/searchEngine/lucene/140k_products.txt";
 		List<Product> products = fileToList(fileName);
 		System.out.println(products.size());
 	}

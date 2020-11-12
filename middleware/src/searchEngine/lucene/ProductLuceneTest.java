@@ -1,6 +1,5 @@
-package searchEngine;
+package searchEngine.lucene;
 
-import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.TextField;
@@ -10,15 +9,11 @@ import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
-import org.apache.lucene.search.highlight.Highlighter;
-import org.apache.lucene.search.highlight.QueryScorer;
-import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.RAMDirectory;
 import org.wltea.analyzer.lucene.IKAnalyzer;
 
 import java.io.IOException;
-import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -107,7 +102,7 @@ public class ProductLuceneTest {
 		IndexWriterConfig config = new IndexWriterConfig(analyzer);
 		// 索引
 		IndexWriter writer = new IndexWriter(index, config);
-		String fileName = "E:\\malf\\how2jStudy\\middleware\\src\\searchEngine\\140k_products.txt";
+		String fileName = "E:\\malf\\how2jStudy\\middleware\\src\\searchEngine\\lucene\\140k_products.txt";
 		List<Product> products = ProductUtil.fileToList(fileName);
 		int total = products.size();
 		int count = 0, per = 0, oldPer = 0;

@@ -1,4 +1,4 @@
-package searchEngine;
+package searchEngine.lucene;
 
 /**
  * @author malf
