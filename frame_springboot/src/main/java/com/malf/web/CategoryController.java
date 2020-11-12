@@ -1,6 +1,6 @@
 package com.malf.web;
 
-import com.malf.dao.CategoryDao;
+import com.malf.mapper.CategoryMapper;
 import com.malf.pojo.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,11 +18,11 @@ import java.util.List;
 @Controller
 public class CategoryController {
 	@Autowired
-	CategoryDao categoryDao;
+	CategoryMapper categoryMapper;
 
 	@RequestMapping("/listCategory")
 	public String listCategory(Model m) throws Exception {
-		List<Category> cs = categoryDao.findAll();
+		List<Category> cs = categoryMapper.findAll();
 		m.addAttribute("cs", cs);
 		return "listCategory";
 	}

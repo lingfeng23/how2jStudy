@@ -13,15 +13,15 @@ import javax.persistence.Table;
  * @project frame_springboot
  * @since 2020/11/12
  */
-@Entity
-@Table(name = "category")
+//@Entity
+//@Table(name = "category")
 public class Category {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+//	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@Column(name = "id")
 	private int id;
 
-	@Column(name = "name")
+//	@Column(name = "name")
 	private String name;
 
 	public int getId() {
