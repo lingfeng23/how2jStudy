@@ -23,4 +23,5 @@ public class HelloController {
 				DateFormat.getDateInstance().format(new Date()));
 		return "hello";
 	}
+
 }
