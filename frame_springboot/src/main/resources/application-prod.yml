@@ -1,0 +1,8 @@
+spring:
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/jsp/
+server:
+  context-path: /test
+  port: 8888
