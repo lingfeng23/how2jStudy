@@ -1,7 +1,12 @@
 package com.malf.web;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.text.DateFormat;
+import java.util.Date;
 
 /**
  * @author malf
@@ -9,10 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @project frame_springboot
  * @since 2020/11/12
  */
-@RestController
+//@RestController
+@Controller
 public class HelloController {
 	@RequestMapping("/hello")
-	public String hello() {
-		return "Hello Spring Boot!";
+	public String hello(Model model) {
+		model.addAttribute("now",
+				DateFormat.getDateInstance().format(new Date()));
+		return "hello";
 	}
 }
