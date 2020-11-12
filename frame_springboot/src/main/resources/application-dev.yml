@@ -3,6 +3,18 @@ spring:
     view:
       suffix: .jsp
       prefix: /WEB-INF/jsp/
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8
+    username: root
+    password: password
+  spring:
+    jpa:
+      properties:
+        hibernate:
+          hbm2ddl:
+            auto=update: update
+
 server:
-  context-path: /test
+#  context-path: /test
   port: 8080
