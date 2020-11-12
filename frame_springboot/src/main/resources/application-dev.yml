@@ -9,6 +9,10 @@ spring:
     username: root
     password: password
   spring:
+    http:
+      multipart:
+        maxFileSize: 100Mb
+        maxRequestSize: 100Mb
     jpa:
       properties:
         hibernate:
